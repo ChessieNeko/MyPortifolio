@@ -1,0 +1,58 @@
+:root{
+    --color-sherbet: #fef8b4;
+    --color-dark: #404040;
+}
+
+.day {
+    --color-mint: hsl(164, 61%, 65%);
+    --color-mint-up: hsl(148, 35%, 74%);
+    --color-mint-down: hsl(163, 36%, 51%);
+    --color-lilac: hsl(264, 51%, 71%);
+    --color-sea: hsl(189, 58%, 65%);
+    --color-highlight: hsl(264, 51%, 71%);
+    --color-lilac-up: hsl(240, 33%, 77%);
+    --color-sherbet: #fef8b4;
+    --color-sherbet-fade: hsl(55, 100%, 94%);
+    --color-rose: hsl(344, 56%, 69%);
+    --color-marshmellow: hsl(329, 44%, 71%);
+    --color-peach: hsl(4, 65%, 85%);
+    --color-biscuit: hsl(26, 18%, 61%);
+    --color-oat: hsl(17, 12%, 77%);
+    --color-light: hsl(0, 0%, 97%);
+    --color-light-fade: hsl(300, 11%, 96%);
+    --color-light-down: hsl(210, 4%, 98%);
+    --color-light-down-2: hsl(210, 4%, 96%);
+    --color-light-down-3: hsl(210, 4%, 93%);
+    --color-mid: hsl(0, 0%, 80%);
+    --color-dark: #404040;
+    --color-dark-opacity: #4040404d;
+    --color-dark-down: hsl(237, 18%, 23%);
+    --color-mint-selection: rgba(111, 220, 191, 0.9);
+    --color-lilac-selection: rgba(173, 143, 219, 0.9);
+    --color-light-selection: rgba(247, 247, 247, 0.99);
+    --color-dark-selection: rgba(64, 64, 64, 0.99);
+}
+
+.night {
+    -webkit-font-smoothing: antialiased;
+    --color-mint: hsl(316, 30%, 36%);
+    --color-highlight: hsl(240, 33%, 77%);
+    --color-lilac: hsl(263, 29%, 32%);
+    --color-peach: hsl(316, 30%, 36%);
+    --color-sherbet: hsl(257, 8%, 18%);
+    --color-sherbet-fade: hsl(260, 24%, 18%);
+    --color-marshmellow: hsl(314, 22%, 42%);
+    --color-light: hsl(274, 4%, 15%);
+    --color-light-fade: hsl(274, 4%, 16%);
+    --color-light-down: hsl(274, 4%, 16%);
+    --color-light-down-2: hsl(274, 4%, 18%);
+    --color-light-down-3: hsl(274, 4%, 20%);
+    --color-mid: hsl(0, 0%, 80%);
+    --color-dark: hsl(0, 0%, 98%);
+    --color-dark-opacity: hsla(0, 0%, 98%, 0.3);
+    --color-dark-down: hsl(0, 0%, 98%);
+    --color-mint-selection: rgba(119, 64, 105, 0.9);
+    --color-lilac-selection: rgba(76, 58, 105, 0.9);
+    --color-light-selection: rgba(38, 37, 40, 0.99);
+    --color-dark-selection: rgba(250, 250, 250, 0.99);
+}
