@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop</title>
+    <!--Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="assets/icons/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link />
+  </head>
+  <body>
+    <nav>
+      <button id="btn-close" class="btn"><i class="bi bi-x-lg"></i></button>
+    </nav>
+    <main>
+      <div class="header">
+        <div id="box-statement">
+          <h2 id="indice-question"></h2>
+          <p class="question-statement"></p>
+        </div>
+
+        <div class="box-lifes">
+          <span><i class="bi bi-suit-heart-fill"></i></span>
+          <span><i class="bi bi-suit-heart-fill"></i></span>
+          <span><i class="bi bi-suit-heart"></i></span>
+        </div>
+      </div>
+      <dialog id="modal-1" class="modal">
+        <div class="modal-body">
+          <h1 class="modal-title"></h1>
+          <div class="modal-boxAnswer">
+            <p>Resposta correta: </p>
+          </div>
+          <p class="modal-korean"></p>
+          <p class="modal-translation"></p>
+          <p id="modal-points"></p>
+
+          <button class="btn btnModal-continuar" data-modal="modal-1">Continuar</button>
+        </div>
+      </dialog>
+      <section class="box-phrase">
+        <div class="box-hints-btn">
+          <button id="btn-hint-1" class="btn btn-hint">
+            Dica
+            <i class="bi bi-lightbulb-fill"></i>
+          </button>
+          <button id="btn-hint-2" class="btn btn-hint">
+            Dica
+            <i class="bi bi-lightbulb-fill"></i>
+          </button>
+          <button id="btn-hint-3" class="btn btn-hint">
+            Dica
+            <i class="bi bi-lightbulb-fill"></i>
+          </button>
+        </div>
+        <div class="box-type2">
+          <p>A tradução para a frase é:</p>
+        </div>
+
+        <div class="question"></div>
+
+        <div class="box-options"></div>
+        <div class="box-btn-question">
+          <button id="btn-check" class="btn">
+            Confirma <i class="bi bi-check"></i>
+          </button>
+          <button id="btn-clear" class="btn">
+            <i class="bi bi-arrow-counterclockwise"></i>
+          </button>
+        </div>
+      </section>
+      
+      <button id="btn-continuar" class="btn open-modal" data-modal="modal-1">
+        Continuar
+      </button>
+      <button id="btn-next" class="btn no-interaction">
+        Next <i class="bi bi-caret-right-fill"></i>
+      </button>
+      <button id="btn-exit" class="btn no-interaction">
+        Sair <i class="bi bi-box-arrow-right"></i>
+      </button>
+    </main>
+
+
+    <script src="questions.js"></script>
+    <script src="questionsScript.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
