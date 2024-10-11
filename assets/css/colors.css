@@ -1,6 +1,9 @@
 :root{
     --color-sherbet: #fef8b4;
     --color-dark: #404040;
+    --color-lilac: hsl(263, 29%, 32%);
+    --color-mint: hsl(164, 61%, 65%);
+    --color-sea: hsl(189, 58%, 65%);
 }
 
 .day {
