@@ -159,8 +159,6 @@ nav{
     padding: 0 50px;
 
     height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
-    overflow: hidden;
-    position: relative;
 }
 .skills-wrapper{
     display: flex;
@@ -236,10 +234,5 @@ nav{
     padding: 0 50px;
 
     height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
-}
 
-#reset-button{
-    position: absolute;
-    bottom: 10px; 
-    right: 10px;
 }

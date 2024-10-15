@@ -150,58 +150,7 @@ nav{
     transform: translateX(1.3rem);
 }
 /*******************************************/
-#my-skills{
-    display: flex;
-    flex-direction: column;
 
-    justify-content: space-evenly;
-    background-color: var(--color-sea);
-    padding: 0 50px;
-
-    height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
-    overflow: hidden;
-    position: relative;
-}
-.skills-wrapper{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap:1.5rem;
-    font-family: "Londrina Solid", sans-serif;
-    font-size: 2rem;
-}
-
-.card-skill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    background-color: aliceblue;
-    border: 3PX solid black;
-    border-radius: 10px;
-    
-    cursor: grab;
-}
-.card-top{
-    display: flex;
-    justify-content: end;
-    gap: 7px;
-
-    font-size: 15px;
-    border-bottom: 3px solid black;
-
-    width: 100%;
-    padding: 10px;
-}
-.card-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    padding: 30px 40px;
-}
 
 .skill-tec{
     display: flex;
@@ -214,32 +163,79 @@ nav{
     margin-bottom: 40px;
 }
 
-.skisll-tec{
-    display: flex;
-    align-items: center;
-    flex-basis: calc(33.33% - 20px); /* Ajusta para três itens por linha */
-    gap: 20px;
-    border: 1px solid red;
-    margin-bottom: 30px;
-}
 .skill-icon{
     height: 60px;
     width: 60px;
 }
-
 #my-projects{
     display: flex;
     flex-direction: column;
 
     justify-content: space-evenly;
+    background-color:rgb(190, 225, 155);
+    padding: 0 50px;
+
+    height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
+
+}
+#my-skills{
+    display: flex;
+    flex-direction: column;
+
+    /*justify-content: space-evenly;*/
     background-color: var(--color-sea);
     padding: 0 50px;
 
     height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
+
+    overflow: hidden;
+}
+
+.skills-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap:1.5rem;
+    font-family: "Londrina Solid", sans-serif;
+    position: relative;
+    font-size: 2rem;
+}
+.card-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: aliceblue;
+    border: 3PX solid black;
+    border-radius: 10px;
+
+    /*position: absolute;*/
+}
+.card-top{
+    display: flex;
+    justify-content: end;
+    gap: 7px;
+
+    font-size: 15px;
+    border-bottom: 3px solid black;
+
+    width: 100%;
+    padding: 10px;
+    
+    cursor: grab;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 30px 40px;
 }
 
 #reset-button{
     position: absolute;
-    bottom: 10px; 
-    right: 10px;
+    bottom: -800px;
+    right: 0;
 }
