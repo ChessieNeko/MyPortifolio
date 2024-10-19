@@ -98,7 +98,7 @@ nav{
 
 .btns-banner button{
     background-color: var(--color-lilac);
-    color: white;
+    color: var(--color-light);
 
     border: none;
     border-radius: 20px;

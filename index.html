@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/normalize.css"/>
     <link rel="stylesheet" href="assets/css/colors.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/secProjects.css"/>
+    <link rel="stylesheet" href="assets/css/contact.css"/>
 </head>
 <body>
     <nav class="menu-nav">
@@ -39,8 +41,8 @@
             </p>
         </div>
         <div class="btns-banner">
-            <button>Contact-me</button>
-            <button>Download CV</button>
+            <button class="btn">Contact-me</button>
+            <button class="btn">Download CV</button>
         </div>    
     </section>    
     <section id="about-me">
@@ -124,90 +126,106 @@
             <article class="project-card">
                 <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
                 <div class="card-project-body">
-                    <h2>Melância POP!</h2>
+                    <h2>Melancia POP!</h2>
                     <div class="project-info">
+                        <button class="close-card">
+                            <i class="bi bi-x"></i>
+                        </button> 
                         <p>Reprodutor de música</p>
-                        <button>
+                        <button class="btn-open-project">
                             <i class="bi bi-box-arrow-up-right"></i>
                         </button>                        
                     </div>
                 </div>
             </article>
             <article class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
+                <img class="project-img" alt="" src="assets/images/projects/background2.png">
                 <div class="card-project-body">
-                    <h2>Melância POP!</h2>
+                    <h2>Portifólio Feliz</h2>
                     <div class="project-info">
-                        <p>Reprodutor de música</p>
+                        <button class="close-card">
+                            <i class="bi bi-x"></i>
+                        </button> 
+                        <p>Projeto feito em aula</p>
                         <button>
                             <i class="bi bi-box-arrow-up-right"></i>
-                        </button>
+                        </button>                        
                     </div>
                 </div>
             </article>
-            <article class="project-card">
+            <!--article class="project-card">
+                <img class="project-img" alt="" src="assets/images/projects/girl-banner.png">
+                <div class="card-project-body">
+                    <h2>Portifólio PB</h2>
+                    <div class="project-info">
+                        <button class="close-card">
+                            <i class="bi bi-x"></i>
+                        </button> 
+                        <p>Replica de layout encontrado no Figma</p>
+                        <button>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </button>                        
+                    </div>
+                </div>
+            </-article>
+            <article-- class="project-card">
                 <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
                 <div class="card-project-body">
-                    <h2>Melância POP!</h2>
+                    <h2>Melancia POP!</h2>
                     <div class="project-info">
+                        <button class="close-card">
+                            <i class="bi bi-x"></i>
+                        </button> 
                         <p>Reprodutor de música</p>
                         <button>
                             <i class="bi bi-box-arrow-up-right"></i>
-                        </button>
+                        </button>                        
                     </div>
                 </div>
-            </article>
-            <article class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
-                <div class="card-project-body">
-                    <h2>Melância POP!</h2>
-                    <div class="project-info">
-                        <p>Reprodutor de música</p>
-                        <button>
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
-                <div class="card-project-body">
-                    <h2>Melância POP!</h2>
-                    <div class="project-info">
-                        <p>Reprodutor de música</p>
-                        <button>
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
-                <div class="card-project-body">
-                    <h2>Melância POP!</h2>
-                    <div class="project-info">
-                        <p>Reprodutor de música</p>
-                        <button>
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
-                <div class="card-project-body">
-                    <h2>Melância POP!</h2>
-                    <div class="project-info">
-                        <p>Reprodutor de música</p>
-                        <button>
-                            <i class="bi bi-box-arrow-up-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </article>
+            </article-->
         </div>
     </section>
-    <footer id="contact-me">
+    <section id="contact-me">
+        <h2 class="section-title">Contato</h2>
+
+        <div class="screen-card-form">
+            <div class="screen-card-top-form">
+                <h2 class="contact-subtitle">Me envie uma mensagem!</h2>
+                <div class="top-icons">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-x-circle-fill"></i>
+                </div>
+            </div>
+            <form id="contact-form">
+                <label for="formName">Nome:
+                    <input id="formName" type="text" name="formName" placeholder="Digite seu nome" required>
+                </label>
+            
+                <label for="formEmail">Email:
+                    <input id="formEmail" type="email" name="formEmail" placeholder="Digite seu email" required>
+                </label>
+            
+                <label for="formMessage">Sua mensagem:
+                    <textarea id="formMessage" name="formMessage" placeholder="Escreva a sua mensagem" required></textarea>
+                </label>
+            
+                <button class="btn" type="submit">Enviar</button>
+            </form>                      
+        </div>
+        
+        <!--a href="https://wa.me/5555991893175"><i class="icon-whatsapp bi bi-whatsapp"></i></a-->
+    </section>
+    <footer>        
+        <section id="contact-links">
+            <h2 class="contact-subtitle">Links</h2>
+            <ul class="contact-icons-list">
+                <li><a href="https://wa.me/5555991893175"><i class="icon-whatsapp bi bi-whatsapp"></i></a></li>
+                <li><a href=""><i class="icon-linkedin bi bi-linkedin" target="_blank"></i></a></li>
+                <li><a href="https://github.com/ChessieNeko" target="_blank"><i class="icon-github bi bi-github"></i></a></li>
+            </ul>
+            <p>Copyright © 2024 | Coded by Elizabeth Uzoegwu</p>
+        </section>
     </footer>
 </body>
 <script src="main.js"></script>

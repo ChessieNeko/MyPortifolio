@@ -38,6 +38,7 @@ nav{
     
     border-bottom: 4px solid var(--color-dark);
     border-radius: 15%;
+    width: 100%;
 }
 
 .menu-nav-list{
@@ -96,23 +97,17 @@ nav{
     justify-content: space-evenly;
 }
 
-.btns-banner button{
+.btn{
     background-color: var(--color-lilac);
-    color: white;
+    color: var(--color-light);
 
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     cursor: pointer;
     font-weight: 600;
 }
 
-/*
-<label class="btn-switch">
-    <input type="checkbox" id="chk-switch">
-    <span class="slider"></span>
-</label>
-*/
 /*Toggle Switch*/
 #chk-switch{
     display: none;
@@ -178,7 +173,7 @@ nav{
     align-items: center;
     justify-content: center;
     
-    background-color: aliceblue;
+    background-color: var(--color-light);
     border: 3PX solid black;
     border-radius: 10px;
     
@@ -231,64 +226,4 @@ nav{
     position: absolute;
     bottom: 10px; 
     right: 10px;
-}
-
-#my-projects{
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-evenly;
-    background-color: var(--color-rose);
-    padding: 0 50px;
-
-
-    /*height: calc(100vh - 70px);Subtraindo a altura da nav*/
-}
-
-.projects-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.project-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    padding: 15px;
-    border: 1PX solid black;
-    background-color: white;
-    box-shadow: 5px 5px #0606067b;
-    /*border-radius: 5px;*/
-    cursor: pointer;
-    min-height: 305px;
-    
-    transition: transform .15s ease-in-out;
-}
-
-.project-card:hover{
-    transform: scale(1.02) rotate(-1.5deg);
-}
-
-.project-card .project-info{
-    display: none;
-}
-.project-card.-opened .project-info{
-    display: flex;
-    flex-direction: column;
-}
-.project-card.-opened{
-    flex-direction: row;
-}
-.project-img{
-    width: 13rem; 
-}
-
-.project-card p{
-    font-size: 1.5rem;
-    font-weight: 600;
 }

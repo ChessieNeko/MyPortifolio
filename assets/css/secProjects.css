@@ -1,0 +1,100 @@
+#my-projects{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    background-color: var(--color-rose);
+    padding: 0 50px;
+
+    /*height: calc(100vh - 70px);Subtraindo a altura da nav*/
+}
+.projects-wrapper{
+    display: flex;
+    justify-content: center;
+
+    /*grid-template-columns: repeat(3, 1fr); /* Define 3 colunas na grid 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+/* Estiliza os cards que estão na última coluna de cada linha */
+/*.project-card:nth-child(3n) {
+    background-color: blue; /* Aplica cor azul para os cards da margem direita *
+}*/
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 15px;
+    
+    background-color: aliceblue;
+    box-shadow: 5px 5px #0606067b;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    min-height: 305px;
+    min-width: 240px;
+    
+    transition: transform .15s ease-in-out;
+}
+
+.project-card:hover{
+    transform: scale(1.02) rotate(-1.5deg);
+}
+.card-project-body{
+    /*border: 3px solid red;*/
+    font-size: 30px;
+    font-family: "Square Peg", cursive;
+}
+.project-card.-opened .card-project-body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(103, 130, 8);
+}
+.project-card .project-info{
+    display: none;
+}
+.project-card.-opened .project-info{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 151, 151);
+}
+/*card inteiro quando aberto*/
+.project-card.-opened{
+    flex-direction: row;
+    background-color: rgb(155, 242, 242);
+    /*width: 525px;*/
+}
+.project-card.-rosa{
+    color: crimson;
+}
+.project-img{
+    width: 13rem; 
+    background-color: rgb(102, 100, 237);
+}
+
+.project-card p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 760px) {
+    #my-projects{
+        background-color: rgb(156, 7, 224);
+        pointer-events: none;
+    }
+    /*card sempre aberto*/
+    .project-card{
+        flex-direction: row;
+        background-color: rgb(155, 242, 242);
+    }
+    .close-card{
+        display: none;
+    }
+    .btn-open-project{
+        pointer-events: none;
+    }
+}

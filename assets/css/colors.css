@@ -4,7 +4,8 @@
     --color-lilac: hsl(263, 29%, 32%);
     --color-mint: hsl(164, 61%, 65%);
     --color-sea: hsl(189, 58%, 65%);
-    --color-rose: hsl(344, 56%, 69%);    
+    --color-rose: hsl(344, 56%, 69%);   
+    --color-light: hsl(0, 0%, 97%); 
 }
 
 .day {
