@@ -24,21 +24,42 @@
     background-color: blue; /* Aplica cor azul para os cards da margem direita *
 }*/
 .project-card{
+    --blur-card-color: rgba(240, 248, 255, 0.767);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    padding: 15px;
+    flex-direction: column;    
     
-    background-color: aliceblue;
-    box-shadow: 5px 5px #0606067b;
-    /*border-radius: 5px;*/
+    background-color: var(--blur-card-color);
     cursor: pointer;
-    min-height: 305px;
+    height: 305px;
     min-width: 240px;
     
     transition: transform .15s ease-in-out;
+    
+    /*efeito desfocado*/
+    box-shadow: 0 0 5px var(--blur-card-color);
+    position: relative;
+}
+.close-card{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+.card-face{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    
+    height: 100%;
+    width: 100%;
+    max-width: 240px;
+    padding: 15px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px #0606067b;
 }
 
 .project-card:hover{
@@ -46,26 +67,51 @@
 }
 .card-project-body{
     /*border: 3px solid red;*/
+    padding: 0 30px;
     font-size: 30px;
     font-family: "Square Peg", cursive;
 }
+.tags-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+.tag-tec{
+    border-width: 4px;
+    border-style: dashed;
+    
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 7px;
+}
+.tag-tec.-color-html{
+    border-color: var(--color-html);
+}
+.tag-tec.-color-css{
+    border-color: var(--color-css);
+}
+.tag-tec.-color-js{
+    border-color: var(--color-js);
+}
+
+
 .project-card.-opened .card-project-body{
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    color: rgb(103, 130, 8);
 }
 .project-card .project-info{
     display: none;
 }
 .project-card.-opened .project-info{
+    /*comportamento quando aberto*/
     display: flex;
     flex-direction: column;
-    background-color: rgb(223, 151, 151);
+    justify-content: space-evenly;
+
+    height: 100%;
 }
 /*card inteiro quando aberto*/
 .project-card.-opened{
     flex-direction: row;
-    background-color: rgb(155, 242, 242);
     /*width: 525px;*/
 }
 .project-card.-rosa{
@@ -79,6 +125,21 @@
 .project-card p{
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.btn-open-project{
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+.btn-open-project:hover{
+    color: cornflowerblue;
 }
 
 @media only screen and (max-width: 760px) {
