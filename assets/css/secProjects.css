@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     
-    padding: 10px 30px;
+    padding: 10px 30px 30px 30px;
     min-height: 100vh;
     position: relative;
 
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
 
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
     /*padding: 0 1rem;*/
 }
@@ -38,8 +38,7 @@
     box-shadow: 0 0 5px var(--blur-card-color);
     
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
     
     width: 100%;
     height: 8.5rem;
@@ -56,7 +55,7 @@
 
     height: 100%;
     width: 100px;
-    
+    padding: 0 10px;
     font-size: .5rem;
     background-color: aliceblue;
     box-shadow: 5px 5px #0606067b;
@@ -67,31 +66,53 @@
 .project-img{
     width: auto;
     height: 60%;
-    background-color: var(--color-rose);
+    background-color: rgb(102, 100, 237);
 }
 /*Body*/
-.card-project-body{
-    background-color: aqua;
-}
-
 /*"ABERTO"*/
 .project-card .card-project-body{
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
 }
-.project-card .project-info{
+
+.project-info{
     /*comportamento quando aberto*/
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: cornflowerblue;
-    width: 120px;
+    justify-content: space-between;
+    
+    padding: 10px;
     height: 100%;
 }
 .project-card p{
     font-size: 1.1rem;
     font-weight: 600;
 }
+
+/*Tags Tecnologias*/
+.tags-wrapper{
+    display: flex;
+    gap: .5rem;
+}
+.tag-tec{
+    font-size: .6rem;
+    border-width: 3px;
+    border-style: dashed;
+    
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 7px;
+}
+.tag-tec.-color-html{
+    border-color: var(--color-html);
+}
+.tag-tec.-color-css{
+    border-color: var(--color-css);
+}
+.tag-tec.-color-js{
+    border-color: var(--color-js);
+}
+
 
 /*Btns*/
 .btn-close-card{
@@ -130,10 +151,7 @@
         flex-wrap: wrap;
         padding: 3rem 0;
     }
-    /* Estiliza os cards que estão na última coluna de cada linha */
-    /*.project-card:nth-child(3n) {
-        background-color: blue; /* Aplica cor azul para os cards da margem direita *
-    }*/
+    
     .project-card{
         --blur-card-color: rgba(240, 248, 255, 0.767);
         display: flex;
@@ -209,29 +227,6 @@
     .project-card.-opened .card-project-body{
         font-family: "Montserrat", sans-serif;
         font-size: 1.3rem;
-    }
-    .project-card .project-info{
-        display: none;
-    }
-    .project-card.-opened .project-info{
-        /*comportamento quando aberto*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    
-        height: 100%;
-    }
-    /*card inteiro quando aberto*/
-    .project-card.-opened{
-        flex-direction: row;
-        /*width: 525px;*/
-    }
-    .project-card.-rosa{
-        color: crimson;
-    }
-    .project-img{
-        width: 13rem; 
-        background-color: rgb(102, 100, 237);
     }
     
     .project-card p{
