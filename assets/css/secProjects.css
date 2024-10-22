@@ -121,8 +121,8 @@
 
 .btn-open-project{
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: .3rem;
+    right: .3rem;
 
     border: none;
     font-size: 1.3rem;
