@@ -6,6 +6,9 @@ const initialPositions = [];
 const $skillArea = document.getElementById("my-skills")
 const cardSkill = document.querySelectorAll(".card-skill");
 let infoSkillArea = $skillArea.getBoundingClientRect();
+let lastAction;
+let safeX;
+let safeY;
 
 cardSkill.forEach((card, index) => {
     initialPositions[index] = { top: card.offsetTop, left: card.offsetLeft };
@@ -16,6 +19,7 @@ function mouseDown(e) {
     e.preventDefault();
     
     currentCard = e.currentTarget;
+    
     // Coordenadas iniciais do mouse quando clicamos no card
     startX = e.clientX;
     startY = e.clientY;
@@ -55,41 +59,95 @@ function mouseMove(e) {
     const pointBCardX = pointACardX + currentCard.offsetWidth; // Canto inferior direito X
     const pointBCardY = pointACardY + currentCard.offsetHeight; // Canto inferior direito Y
 
-    // Logar para debug
-    //console.log(`Ponto A do Card em relação ao Container: (${pointACardX}, ${pointACardY})`);
-    //console.log(`Ponto B do Card: (${pointBCardX}, ${pointBCardY})`);
+    console.log("cardPosition.left: " + cardPosition.left);
 
     // Verificações de limites
     if (pointBCardX > $skillArea.offsetLeft + $skillArea.offsetWidth) {
-        console.log("passou esquerda");
+        console.log("passou direita");
+        lastAction = "direita";
     }
-    
+    else
     if (pointBCardY > $skillArea.offsetHeight) {
         console.log("passou Inferior");
+        lastAction = "inferior";
     }
+    else
     // Verifica se o card ultrapassa o limite superior e esquerdo
     if (pointACardX < 0) {
-        console.log("passou direita");
+        console.log("passou esquerda");
+        lastAction = "esquerda";
     }
+    else
     if ( pointACardY < 0) {
         console.log("passou topo");
+        lastAction = "topo";
     }
-    if (pointACardX < 0 || pointACardY < 0) {
-        //console.log("Card está ultrapassando os limites superiores ou esquerdos do container.");
+    else
+    {
+        movimentoX = Math.Clamp(movimentoX, 0, screenWidth);
+        currentCard.style.transform = `translate(${movimentoX}px, ${movimentoY}px)`;
+        lastAction = "";
+        safeX = movimentoX;
+        safeY = movimentoY;
+
+        console.log("Safe: " + safeX + ", " + safeY);
     }
-    
-    currentCard.style.boxShadow = "5px 5px #0606067b";
-    currentCard.style.transform = `translate(${movimentoX}px, ${movimentoY}px)`;
+
+    if(cardPosition.left < 0)
+    {
+        console.log("ZYKA: " + cardPosition.left);
+    }
 }
 
-function mouseUp() {
+function mouseUp(e) {
     // Remove os eventos de movimento e liberação quando soltar o mouse
     document.removeEventListener("mousemove", mouseMove);
     document.removeEventListener("mouseup", mouseUp);
 
     currentCard.style.transition = ''; // Restaura a transição, se necessário
 
-    currentCard.style.boxShadow = "none";
+    const movimentoX = e.clientX - startX + offsetX;
+    const movimentoY = e.clientY - startY + offsetY;
+    let infoCard = currentCard.getBoundingClientRect();
+    let containerInfo = $skillArea.getBoundingClientRect();
+
+    // Canto superior esquerdo do card em relação ao container
+    const pointACardX = infoCard.left - containerInfo.left; // Posição X do card em relação ao container
+    const pointACardY = infoCard.top - containerInfo.top; // Posição Y do card em relação ao container
+
+    const offset = infoCard.left - 1;
+
+    switch(lastAction)
+    {
+        case "esquerda":
+        {
+            console.log("Esquerdinha top: " + safeX + ", " + safeY + " Info x: " + infoCard.left);
+
+            currentCard.style.transform = `translate(${safeX - offset}px, ${safeY}px)`;
+            break;
+        }
+        case "direita":
+        {
+            console.log("Direitinha top: " + safeX + ", " + safeY);
+
+            currentCard.style.transform = `translate(${safeX + infoCard.left}px, ${safeY}px)`;
+            break;
+        }
+        case "topo":
+        {
+            console.log("Topo top: " + safeX + ", " + safeY);
+
+            currentCard.style.transform = `translate(${safeX}px, ${safeY + offset}px)`;
+            break;
+        }
+        case "inferior":
+        {
+            console.log("Inferior top: " + safeX + ", " + safeY);
+
+            currentCard.style.transform = `translate(${safeX}px, ${safeY - offset}px)`;
+            break;
+        }
+    }
 }
 
 
@@ -107,15 +165,5 @@ function resetCardsPosition() {
     const cards = document.querySelectorAll('.card'); // Selecione todos os cards
     cards.forEach(card => {
         card.style.transform = 'translate(0, 0)'; // Reseta a posição para (0, 0)
-    });
-}
-
-// Adiciona um listener para detectar mudanças no tamanho da tela
-window.addEventListener('resize', resetCardPositions);
-
-function resetCardPositions() {
-    cardSkill.forEach((card, index) => {
-        card.style.top = `${initialPositions[index].top}px`;
-        card.style.left = `${initialPositions[index].left}px`;
     });
 }
