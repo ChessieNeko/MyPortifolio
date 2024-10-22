@@ -30,7 +30,7 @@
         </label>        
         <!--button>Light/Dark</button-->
     </nav>
-    <section id="banner">
+    <section id="banner" class="base-section">
         <div class="presentation"> 
             <p class="name-presentation">👋 Hi, I'm Elizabeth!</p>
             <p class="text-presentation">
@@ -45,10 +45,8 @@
             <button class="btn">Contact-me</button>
             <button class="btn">Download CV</button>
         </div>    
-    </section>    
-    <section id="about-me">
     </section>
-    <section id="my-skills">
+    <section id="my-skills" class="base-section">
         <h2 class="section-title">Minhas Habilidades</h2>
         <div class="skills-wrapper">             
             <figure class="card-skill">
@@ -118,10 +116,9 @@
                 </div>
             </figure>
         </div>
-        
-        <button id="reset-button">Resetar Posições</button>
+        <button id="reset-button" class="btn"><i class="bi bi-arrow-counterclockwise"></i></button>
     </section>
-    <section id="my-projects">
+    <section id="my-projects" class="base-section">
         <h2 class="section-title">Meus Projetos</h2>
         <div class="projects-wrapper">
             <article class="project-card -opened">
@@ -131,7 +128,7 @@
                 </div>
                 <div class="card-project-body">
                     <div class="project-info">
-                        <button class="close-card">
+                        <button class="btn-close-card">
                             <i class="bi bi-x"></i>
                         </button> 
                         <p>Reprodutor de música simples.</p>
@@ -146,54 +143,75 @@
                     </div>
                 </div>
             </article>
-            <article class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/background2.png">
+            <article class="project-card -opened">
+                <div class="card-face">
+                    <img class="project-img" alt="" src="assets/images/projects/girl-banner.png">
+                    <h2>Portifólio PB</h2>
+                </div>
                 <div class="card-project-body">
-                    <h2>Portifólio Feliz</h2>
                     <div class="project-info">
-                        <button class="close-card">
+                        <button class="btn-close-card">
                             <i class="bi bi-x"></i>
                         </button> 
-                        <p>Projeto feito em aula</p>
-                        <button>
+                        <p>Reprodutor de música simples.</p>
+                        <div class="tags-wrapper">
+                            <span class="tag-tec -color-html">HTML</span>
+                            <span class="tag-tec -color-css">CSS</span>
+                            <span class="tag-tec -color-js">JS</span>
+                        </div>
+                        <a class="btn-open-project" target="_blank">
                             <i class="bi bi-box-arrow-up-right"></i>
-                        </button>                        
+                        </a>                        
                     </div>
                 </div>
             </article>
-            <!--article class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/girl-banner.png">
+            <article class="project-card -opened">
+                <div class="card-face">
+                    <img class="project-img" alt="" src="assets/images/projects/background2.png">
+                    <h2>Portifólio Feliz 2</h2>
+                </div>
                 <div class="card-project-body">
-                    <h2>Portifólio PB</h2>
                     <div class="project-info">
-                        <button class="close-card">
+                        <button class="btn-close-card">
                             <i class="bi bi-x"></i>
                         </button> 
-                        <p>Replica de layout encontrado no Figma</p>
-                        <button>
+                        <p>Reprodutor de música simples.</p>
+                        <div class="tags-wrapper">
+                            <span class="tag-tec -color-html">HTML</span>
+                            <span class="tag-tec -color-css">CSS</span>
+                            <span class="tag-tec -color-js">JS</span>
+                        </div>
+                        <a class="btn-open-project" target="_blank">
                             <i class="bi bi-box-arrow-up-right"></i>
-                        </button>                        
+                        </a>                        
                     </div>
                 </div>
-            </-article>
-            <article-- class="project-card">
-                <img class="project-img" alt="" src="assets/images/projects/logo-melanciaPOP.png">
+            </article>
+            <article class="project-card -opened">
+                <div class="card-face">
+                    <img class="project-img" alt="" src="assets/images/projects/portfolio.png">
+                    <h2>Icone do Portifólio Feliz</h2>
+                </div>
                 <div class="card-project-body">
-                    <h2>Melancia POP!</h2>
                     <div class="project-info">
-                        <button class="close-card">
+                        <button class="btn-close-card">
                             <i class="bi bi-x"></i>
                         </button> 
-                        <p>Reprodutor de música</p>
-                        <button>
+                        <p>Reprodutor de música simples.</p>
+                        <div class="tags-wrapper">
+                            <span class="tag-tec -color-html">HTML</span>
+                            <span class="tag-tec -color-css">CSS</span>
+                            <span class="tag-tec -color-js">JS</span>
+                        </div>
+                        <a class="btn-open-project" target="_blank">
                             <i class="bi bi-box-arrow-up-right"></i>
-                        </button>                        
+                        </a>                        
                     </div>
                 </div>
-            </article-->
+            </article>
         </div>
     </section>
-    <section id="contact-me">
+    <section id="contact-me" class="base-section">
         <h2 class="section-title">Contato</h2>
 
         <div class="screen-card-form">
@@ -223,17 +241,21 @@
         </div>
         
         <!--a href="https://wa.me/5555991893175"><i class="icon-whatsapp bi bi-whatsapp"></i></a-->
+    </section>    
+    <section id="about-me" class="base-section">
+        <h2 class="section-title">Sobre Mim</h2>
+
     </section>
     <footer>        
-        <section id="contact-links">
-            <h2 class="contact-subtitle">Links</h2>
+        <h2 class="contact-subtitle">Links</h2>
+        <div id="contact-links">
             <ul class="contact-icons-list">
-                <li><a href="https://wa.me/5555991893175"><i class="icon-whatsapp bi bi-whatsapp"></i></a></li>
-                <li><a href=""><i class="icon-linkedin bi bi-linkedin" target="_blank"></i></a></li>
+                <li><a href="https://wa.me/5555991893175" target="_blank"><i class="icon-whatsapp bi bi-whatsapp"></i></a></li>
+                <li><a href="" target="_blank"><i class="icon-linkedin bi bi-linkedin"></i></a></li>
                 <li><a href="https://github.com/ChessieNeko" target="_blank"><i class="icon-github bi bi-github"></i></a></li>
             </ul>
-            <p>Copyright © 2024 | Coded by Elizabeth Uzoegwu</p>
-        </section>
+        </div>
+        <p>Copyright © 2024 | Coded by Elizabeth Uzoegwu</p>
     </footer>
 </body>
 <script src="main.js"></script>

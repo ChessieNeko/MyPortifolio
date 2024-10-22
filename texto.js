@@ -24,7 +24,7 @@ cardsProject.forEach((card) => {
 });
 
 
-const btnCloseCard = document.querySelectorAll(".close-card");
+const btnCloseCard = document.querySelectorAll(".btn-close-card");
 
 function closeCard(e){
     e.stopPropagation(); // Evita a propagação do evento para o card

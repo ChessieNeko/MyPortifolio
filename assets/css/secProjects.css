@@ -1,12 +1,8 @@
 #my-projects{
-    display: flex;
-    flex-direction: column;
-
-    justify-content: space-evenly;
     background-color: var(--color-rose);
-    padding: 0 50px;
 
-    /*height: calc(100vh - 70px);Subtraindo a altura da nav*/
+    min-height: calc(100vh - 70px);/*Subtraindo a altura da nav*/
+    position: relative;
 }
 .projects-wrapper{
     display: flex;
@@ -38,8 +34,9 @@
     /*efeito desfocado*/
     box-shadow: 0 0 5px var(--blur-card-color);
     position: relative;
+    z-index: 1;
 }
-.close-card{
+.btn-close-card{
     position: absolute;
     top: -7px;
     right: -7px;
@@ -96,7 +93,7 @@
 
 .project-card.-opened .card-project-body{
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 .project-card .project-info{
     display: none;

@@ -1,13 +1,8 @@
 /************CONTATO*************/
 #contact-me{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
     background-color: var(--color-sea);
     padding: 0 50px;
-
-    height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
 }
 
 #contact-form{
