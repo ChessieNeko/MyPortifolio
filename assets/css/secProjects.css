@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: space-between;
     
-    padding: 10px;
+    padding: 20px;
     height: 100%;
 }
 .project-card p{
@@ -90,6 +90,11 @@
 }
 
 /*Tags Tecnologias*/
+.about-project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .tags-wrapper{
     display: flex;
     gap: .5rem;
@@ -120,10 +125,9 @@
 }
 
 .btn-open-project{
-    position: absolute;
-    bottom: .3rem;
-    right: .3rem;
-
+    /*position: absolute;
+    bottom: 1rem;
+    right: 1rem;*/
     border: none;
     font-size: 1.3rem;
 
