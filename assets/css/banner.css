@@ -1,11 +1,12 @@
-#banner{
+#banner{    
+    min-height: auto;
 }
 
 .presentation-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
         
     font-family: "Londrina Solid", sans-serif;
     font-size: 2rem;
