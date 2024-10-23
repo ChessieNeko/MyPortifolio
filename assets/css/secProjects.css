@@ -125,9 +125,6 @@
 }
 
 .btn-open-project{
-    /*position: absolute;
-    bottom: 1rem;
-    right: 1rem;*/
     border: none;
     font-size: 1.3rem;
 
@@ -147,7 +144,8 @@
     }
     .projects-wrapper{
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: row;
     
         gap: 3rem;
         flex-wrap: wrap;
@@ -161,22 +159,11 @@
         
         transition: transform .15s ease-in-out;
         position: relative;
-        z-index: 1;
     }
     .project-card.-opened{
-        background-color: aqua;
         flex-direction: row;
         width: auto;
 
-    }
-    .btn-close-card{
-        position: absolute;
-        top: -7px;
-        right: -7px;
-    
-        padding: 5px;
-        cursor: pointer;
-        border: none;
     }
     .card-face{
         display: flex;
@@ -185,19 +172,20 @@
         gap: 35px;
         
         height: 100%;
-        width: 100%;
-        max-width: 240px;
+        width: 240px;
         padding: 15px;
         background-color: aliceblue;
         box-shadow: 5px 5px #0606067b;
         cursor: pointer;
+
+        font-size: 1rem;
     }
     .project-img{
         width: 13rem;
         height: auto;
     }
     
-    .project-card.-opened .project-info{
+    .project-card .project-info{
         /*comportamento quando aberto*/
         display: flex;
         flex-direction: column;
@@ -219,9 +207,13 @@
     }
 
     /*Fechado*/
-    .project-card .project-info{
+    .project-card .card-project-body{
         display: none;
     }
+
+
+
+    /*TAGS E BTNS*/
     .tags-wrapper{
         display: flex;
         gap: 1rem;
@@ -232,7 +224,8 @@
         
         font-weight: 500;
         border-radius: 5px;
-        padding: 7px;
+        padding: 10px;
+        font-size: 1rem;
     }
     .tag-tec.-color-html{
         border-color: var(--color-html);
@@ -246,20 +239,31 @@
     
     
     .project-card.-opened .card-project-body{
+        display: flex;
         font-family: "Montserrat", sans-serif;
         font-size: 1.3rem;
     }
     
-    .project-card p{
+    .project-card .project-description{
         font-size: 1.5rem;
         font-weight: 600;
     }
     
     /*Btns*/
-    .btn-open-project:hover{
-        color: cornflowerblue;
+    .btn-open-project{
+        font-size: 1.9rem;
+    
+        cursor: pointer;
     }
+
     .btn-close-card{
         display: block;
+        position: absolute;
+        top: -7px;
+        right: -7px;
+    
+        padding: 5px;
+        cursor: pointer;
+        border: none;
     }
 }
