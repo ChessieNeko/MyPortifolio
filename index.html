@@ -19,23 +19,27 @@
     <link rel="stylesheet" href="assets/css/navMenu.css"/>
 </head>
 <body>
-    <nav class="menu-nav">
-        <div class="myIcon">
-            <img src="assets/images/projects/portfolio.png" alt="my Avatar" width="50px">
-        </div>
-        <ul class="nav-list">
-            <li><a href="#about-me" class="nav-link">Sobre mim</a></li>
-            <li><a href="#my-skills" class="nav-link">Skills</a></li>
-            <li><a href="#my-projects" class="nav-link">Meus Projetos</a></li>
-            <li><a href="#contact-me" class="nav-link">Contato</a></li>
-        </ul>
-        <!-- btn switch -->
-        <label class="btn-switch">
-            <input type="checkbox" id="chk-switch">
-            <span class="slider"></span>
-        </label>        
-        <!--button>Light/Dark</button-->
-    </nav>
+    <div id="menu-wrapper">
+        <input type="checkbox" id="checkbox-btn-nav-menu">
+        <label class="btn-nav-menu" for="checkbox-btn-nav-menu"><i class="bi bi-list"></i></label>
+        <!--label class="btn-menu-close" for="btn-nav-menu"><i class="bi bi-x"></i></!--label-->
+        <nav class="menu-nav">
+            <div class="myIcon">
+                <img src="assets/images/projects/portfolio.png" alt="my Avatar" width="50px">
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about-me" class="nav-link">Sobre mim</a></li>
+                <li><a href="#my-skills" class="nav-link">Skills</a></li>
+                <li><a href="#my-projects" class="nav-link">Meus Projetos</a></li>
+                <li><a href="#contact-me" class="nav-link">Contato</a></li>
+            </ul>
+            <!-- btn switch -->
+            <label class="btn-switch">
+                <input type="checkbox" id="chk-switch">
+                <span class="slider"></span>
+            </label>
+        </nav>
+    </div>
     <section id="banner" class="base-section">
         <div class="presentation-wrapper"> 
             <p class="name-presentation">👋 Hi, I'm Elizabeth!</p>
