@@ -13,7 +13,7 @@
     
 }
 .screen-card-form{
-    background-color: pink;
+    background-color: var(--color-light);
     border: 3PX solid black;
     border-radius: 10px;
     width: 100%;
@@ -26,8 +26,7 @@
     padding: 10px;
 }
 .top-icons i{
-    margin-left: 5px;
-    font-size: 15px;
+    font-size: 13px;
     cursor: pointer;
 }
 
@@ -39,7 +38,7 @@
 
 .contact-subtitle{
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 #contact-form input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder{
