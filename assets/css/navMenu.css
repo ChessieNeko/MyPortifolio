@@ -3,9 +3,9 @@
 }
 #menu-wrapper .menu-nav{
     position: fixed;
-    right: -45vh;
+    right: -100vh;
 
-    width: 40vw;
+    width: 45vw;
     height: 100vh;
 
     z-index: 100;
@@ -27,9 +27,10 @@
 .nav-list{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     padding: 1rem;
     margin-bottom: 2rem;
+    width: 100%;
 }
 .nav-list a{
     line-height: 3;
@@ -60,7 +61,7 @@
 /*se o checkbox tiver marcado....*/
 #checkbox-btn-nav-menu:checked ~ .btn-nav-menu{
     background-color: var(--color-lilac);
-    right:  37vw;
+    right:  40vw;
     z-index: 1000;
 }
 
