@@ -3,15 +3,15 @@
 }
 #menu-wrapper .menu-nav{
     position: fixed;
-    right: -40vh;/**/
+    right: -45vh;/**/
 
-    width: 35vw;
-    height: 90vh;
+    width: 40vw;
+    height: 100vh;
 
     z-index: 100;
     background-color: chartreuse;
 
-    /*transition: all 0.3s linear;*/
+    transition: all 0.3s linear;
 }
 
 #menu-wrapper .btn-nav-menu{    
