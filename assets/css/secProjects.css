@@ -40,7 +40,7 @@
     display: flex;
     
     
-    width: 100%;
+    width:auto;
     height: 8.5rem;
     position: relative;
 }
@@ -140,6 +140,7 @@
 @media only screen and (min-width: 600px) {
     #my-projects{
         background-color: var(--color-rose);
+        /*background-color: var(--color-mint);*/
     
         min-height: calc(100vh - 70px);/*Subtraindo a altura da nav*/
         position: relative;
@@ -148,29 +149,25 @@
         display: flex;
         justify-content: center;
     
-        /*grid-template-columns: repeat(3, 1fr); /* Define 3 colunas na grid 
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-    
-        gap: 1rem;
+        gap: 3rem;
         flex-wrap: wrap;
         padding: 3rem 0;
     }
     
     .project-card{
-        --blur-card-color: rgba(240, 248, 255, 0.767);
-        display: flex;
-        flex-direction: column;    
-        
-        background-color: var(--blur-card-color);
+        flex-direction: column;   
         height: 305px;
-        min-width: 240px;
+        width: auto;
         
         transition: transform .15s ease-in-out;
-        
-        /*efeito desfocado*/
-        box-shadow: 0 0 5px var(--blur-card-color);
         position: relative;
         z-index: 1;
+    }
+    .project-card.-opened{
+        background-color: aqua;
+        flex-direction: row;
+        width: auto;
+
     }
     .btn-close-card{
         position: absolute;
@@ -195,6 +192,21 @@
         box-shadow: 5px 5px #0606067b;
         cursor: pointer;
     }
+    .project-img{
+        width: 13rem;
+        height: auto;
+    }
+    
+    .project-card.-opened .project-info{
+        /*comportamento quando aberto*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        padding: 50px 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
     
     .project-card:hover{
         transform: scale(1.02) rotate(-1.5deg);
@@ -204,6 +216,11 @@
         padding: 0 30px;
         font-size: 30px;
         font-family: "Square Peg", cursive;
+    }
+
+    /*Fechado*/
+    .project-card .project-info{
+        display: none;
     }
     .tags-wrapper{
         display: flex;
@@ -238,7 +255,11 @@
         font-weight: 600;
     }
     
+    /*Btns*/
     .btn-open-project:hover{
         color: cornflowerblue;
+    }
+    .btn-close-card{
+        display: block;
     }
 }
