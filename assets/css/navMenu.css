@@ -43,7 +43,7 @@
 }
 
 #menu-wrapper .btn-nav-menu{    
-    position: absolute;
+    position: fixed;
     font-size: 1.6rem;
     top: 1rem;
     right:  1rem;
