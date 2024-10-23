@@ -31,6 +31,8 @@ body{
     
     min-height: 100vh;
     position: relative;
+
+    border-bottom: 4px dashed var(--color-dark);
 }
 .section-title{
     font-size: 3rem;
