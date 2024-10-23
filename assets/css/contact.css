@@ -68,10 +68,19 @@ textarea::-webkit-input-placeholder{
     width: 100px;
 }
 
+
+/*Footer*/
+#footer-links .contact-subtitle{
+    font-size: 1.5rem;
+}
+#footer-links p{
+    text-align: center;
+    padding: 0 30px;
+}
 #contact-links{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
     width: 30%;
     gap: 5rem;
 }
@@ -82,7 +91,6 @@ textarea::-webkit-input-placeholder{
     gap: 1.5rem;
     
 }
-
 .contact-icons-list i{
     font-size: 2.5rem;
 }
