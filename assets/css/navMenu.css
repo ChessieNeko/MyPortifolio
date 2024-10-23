@@ -11,28 +11,32 @@
     z-index: 100;
     background-color: chartreuse;
 
-    transition: all 0.3s linear;
+    transition: right 0.3s linear;
 }
 
 #menu-wrapper .btn-nav-menu{    
     position: absolute;
-    font-size: 1rem;
-    top: 10px;
-    left: 40vw;
+    font-size: 1.6rem;
+    top: 1rem;
+    right:  1rem;
     padding: 5px;
-    z-index: 1001;
-    color: rgb(0, 0, 0);
-    background-color: aqua;
+    z-index: 100;
+    color: var(--color-dark);
+    background-color: transparent;
     cursor: pointer;
+    transition: right 0.2s linear;
 }
 
 #checkbox-btn-nav-menu{
     display: none;
 }
 /*se o checkbox tiver marcado....*/
-#checkbox-btn-nav-menu:checked ~ .btn-nav-menu i::before{
-    /*troca icone*/
+#checkbox-btn-nav-menu:checked ~ .btn-nav-menu{
+    background-color: var(--color-lilac);
+    right:  37vw;
+    z-index: 1000;
 }
+
 #checkbox-btn-nav-menu:checked ~ .menu-nav{
     right: 0;
 }

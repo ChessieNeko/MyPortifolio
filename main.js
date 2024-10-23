@@ -119,3 +119,19 @@ function resetCardPositions() {
         card.style.left = `${initialPositions[index].left}px`;
     });
 }
+
+
+
+////////////////Botão de fechar menu lateral
+const checkbox = document.querySelector("#checkbox-btn-nav-menu");
+const icon = document.querySelector(".btn-nav-menu i");
+
+checkbox.addEventListener("change", function() {
+    if (this.checked) {
+        icon.classList.remove("bi-list"); // Remove o ícone de menu
+        icon.classList.add("bi-x");       // Adiciona o ícone de fechar
+    } else {
+        icon.classList.remove("bi-x");
+        icon.classList.add("bi-list");
+    }
+});
