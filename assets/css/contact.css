@@ -109,10 +109,10 @@ textarea::-webkit-input-placeholder{
 
 @media only screen and (min-width: 600px){
     /************CONTATO*************/
-    #contact-me{
-        
+    #contact-me{        
         background-color: var(--color-sea);
         padding: 0 50px;
+        min-height: auto;
     }
 
     #contact-form{
