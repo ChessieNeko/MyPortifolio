@@ -3,15 +3,42 @@
 }
 #menu-wrapper .menu-nav{
     position: fixed;
-    right: -45vh;/**/
+    right: -45vh;
 
     width: 40vw;
     height: 100vh;
 
     z-index: 100;
-    background-color: chartreuse;
+    /*background-color: var(--color-mint);*/
+    background-image: linear-gradient(
+        var(--color-mint),
+        var(--color-mint),
+        var(--color-mint-faded)
+    );
 
     transition: right 0.3s linear;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.nav-list a{
+    line-height: 3;
+    padding-bottom: .5rem;
+    border-bottom: 3px dashed var(--color-dark);
+}
+.nav-list li:hover a:hover{
+    color: var(--color-lilac);
+    border-color: var(--color-lilac);
 }
 
 #menu-wrapper .btn-nav-menu{    
@@ -39,6 +66,51 @@
 
 #checkbox-btn-nav-menu:checked ~ .menu-nav{
     right: 0;
+}
+
+
+
+
+
+
+
+
+
+/*Toggle Switch*/
+#chk-switch{
+    display: none;
+}
+
+.btn-switch{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    background-color: aliceblue;
+    width: 60px;
+    height: 35px;
+    
+    border-radius: 40px;
+    padding: 5px;
+    
+    cursor: pointer;
+}
+.slider{/*bolinha*/
+    position: absolute;
+    background-color: gold;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    transition: transform .3s ease-in-out;
+}
+
+/*quando checkbox marcada, o irmão muda de cor*/
+#chk-switch:checked + .slider{
+    background-color: var(--color-mint);
+}
+
+#chk-switch:checked + .slider{
+    transform: translateX(1.3rem);
 }
 
 @media only screen and (min-width: 600px){

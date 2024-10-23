@@ -4,6 +4,8 @@
     --color-dark-opacity: #4040404d;
     --color-lilac: hsl(264, 51%, 71%);
     --color-mint: hsl(164, 61%, 65%);
+    --color-mint-faded: hsla(164, 61%, 65%, 0.793);
+    --color-mint-down: hsl(163, 36%, 51%);
     --color-sea: hsl(189, 58%, 65%);
     --color-rose: hsl(344, 56%, 69%);   
     --color-light: hsl(0, 0%, 97%); 
