@@ -40,7 +40,7 @@
     display: flex;
     
     
-    width:auto;
+    max-width: 600px;
     height: 8.5rem;
     position: relative;
 }
