@@ -32,7 +32,7 @@
 }
 /*card sempre aberto*/
 .project-card{
-    --blur-card-color: rgba(17, 65, 108, 0.767);
+    --blur-card-color: rgba(240, 248, 255, 0.767);
     background-color: var(--blur-card-color);
     /*efeito desfocado*/
     box-shadow: 0 0 5px var(--blur-card-color);
@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: space-between;
     
-    padding: 20px;
+    padding: 20px 10px;
     height: 100%;
 }
 .project-card p{
@@ -106,7 +106,7 @@
     
     font-weight: 500;
     border-radius: 5px;
-    padding: 7px;
+    padding: 5px;
 }
 .tag-tec.-color-html{
     border-color: var(--color-html);
