@@ -1,49 +1,45 @@
 /************CONTATO*************/
-#contact-me{
-    
+#contact-me{    
     background-color: var(--color-sea);
-    padding: 0 50px;
+    padding: 0 20px;
+    height: auto;
 }
-
 #contact-form{
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     gap: 30px;
-    padding: 30px 70px;
+    padding: 30px;
     
 }
 .screen-card-form{
-    margin-top: 4rem;
     background-color: var(--color-light);
     border: 3PX solid black;
     border-radius: 10px;
-
-    width: 80%;
+    width: 100%;
 }
 .screen-card-top-form{
     display: flex;
     justify-content: space-between;
     border-bottom: 3px solid black;
 
-    padding: 20px;
+    padding: 10px;
 }
 .top-icons i{
-    margin-left: 10px;
-    font-size: 20px;
+    margin-left: 5px;
+    font-size: 15px;
     cursor: pointer;
 }
 
 
 #contact-form label{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--color-dark);
 }
 
 .contact-subtitle{
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 #contact-form input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder{
@@ -104,3 +100,6 @@ textarea::-webkit-input-placeholder{
     color:blueviolet;
 }
 
+@media only screen and (min-width: 600px){
+    
+}
