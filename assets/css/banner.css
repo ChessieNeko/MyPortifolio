@@ -11,7 +11,8 @@
     font-family: "Londrina Solid", sans-serif;
     font-size: 2rem;
     line-height: 50px;
-    margin: 40px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .presentation-wrapper p{
     text-align: justify;
@@ -39,7 +40,7 @@
 .btn{
     background-color: var(--color-lilac);
     color: var(--color-light);
-    border: 3px solid var(--color-dark);
+    border: 2px solid var(--color-dark);
 
     border-radius: 2px;
     padding: 10px;
