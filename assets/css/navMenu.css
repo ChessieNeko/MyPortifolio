@@ -8,7 +8,7 @@
     width: 45vw;
     height: 100vh;
 
-    z-index: 100;
+    z-index: 1000;
     /*background-color: var(--color-mint);*/
     background-image: linear-gradient(
         var(--color-mint),
@@ -62,7 +62,7 @@
 #checkbox-btn-nav-menu:checked ~ .btn-nav-menu{
     background-color: var(--color-lilac);
     right:  40vw;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 #checkbox-btn-nav-menu:checked ~ .menu-nav{
