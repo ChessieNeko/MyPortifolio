@@ -1,14 +1,4 @@
-.base-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    padding: 10px 30px 30px 30px;
-    min-height: 100vh;
-    position: relative;
 
-    /*border-top: 5px dashed var(--color-dark);*/
-}
 #my-projects{
     background-color: var(--color-rose);
 

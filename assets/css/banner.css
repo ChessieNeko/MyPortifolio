@@ -1,7 +1,9 @@
 #banner{    
     min-height: 100vh;
 }
-
+.visualDiv{
+    display: none;
+}
 .presentation-wrapper{
     display: flex;
     flex-direction: column;

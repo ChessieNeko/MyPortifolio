@@ -2,7 +2,6 @@
 #my-skills{
     background-color: var(--color-sea);
 
-    min-height: auto;
     overflow: hidden;
 }
 .skills-wrapper{
