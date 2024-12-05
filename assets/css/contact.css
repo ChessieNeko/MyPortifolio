@@ -1,6 +1,6 @@
 /************CONTATO*************/
 #contact-me{    
-    background-color: var(--color-sea);
+    background-color: var(--color-grass);
 }
 #contact-form{
     display: flex;
@@ -105,10 +105,88 @@ textarea::-webkit-input-placeholder{
     color:blueviolet;
 }
 
+.screen-card-scroll{
+    display: none;
+}
+
+/*Dark Theme*/
+body.darkTheme #contact-me .screen-card-form{
+    border-color: #6ceb71;
+}
+body.darkTheme #contact-me .screen-card-top-form{
+    position: relative;
+    justify-content: end;
+    background-color: #6ceb71;
+    border-color: #3b4d3b;
+}
+body.darkTheme #contact-me .top-icons{
+    color: var(--color-grass);
+}
+/*
+body.darkTheme #contact-me .screen-card-top-tab .contact-subtitle{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    background-color: #285a29;
+    border-radius: 10px 10px 0 0;
+    
+    padding: 15px;
+}*/
+
+body.darkTheme #contact-me .contact-subtitle{
+    position: absolute;
+    left: 10px;
+    background-color: #3b4d3b;
+    border-radius: 10px 10px 0 0;
+    
+    bottom: 0;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+body.darkTheme #contact-me .screen-card-form{
+    border-radius: 0;
+}
+body.darkTheme #contact-me .screen-card-body{
+    display: flex;
+}
+body.darkTheme #contact-me .screen-card-content{
+    width: 100%;
+    background-color: #3b4d3b;
+}
+/*Scroll Bar*/
+body.darkTheme #contact-me .screen-card-scroll {
+    display: block;
+    position: relative;
+    background-color: #e6e6e6;
+    
+    width: 30px;
+}
+body.darkTheme #contact-me .screen-card-scroll i{
+    color: #3c3c3c;
+    position: absolute;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+body.darkTheme #contact-me .screen-card-scroll i:hover{
+    background-color: #c2c2c2;
+}
+body.darkTheme #contact-me .screen-card-scroll i.bi-caret-up-fill{
+    top: 0;
+}
+body.darkTheme #contact-me .screen-card-scroll i.bi-caret-down-fill{
+    bottom: 0;
+}
+body.darkTheme #contact-me .screen-card-scrollBar{
+    background-color: rgb(126, 126, 126);
+    margin: 30px 1px;
+    height: 40%;
+}
+
+
 @media only screen and (min-width: 600px){
     /************CONTATO*************/
-    #contact-me{        
-        background-color: var(--color-sea);
+    #contact-me{
     }
 
     #contact-form{

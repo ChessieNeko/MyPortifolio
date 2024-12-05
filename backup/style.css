@@ -114,7 +114,7 @@ nav{
 </label>
 */
 /*Toggle Switch*/
-#chk-switch{
+#chk-switchTheme{
     display: none;
 }
 
@@ -150,7 +150,7 @@ nav{
     transform: translateX(1.3rem);
 }
 /*******************************************/
-#my-skills{
+#about-me{
     display: flex;
     flex-direction: column;
 

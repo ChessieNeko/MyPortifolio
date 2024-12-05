@@ -29,7 +29,6 @@
     
     display: flex;
     
-    
     max-width: 600px;
     height: 8.5rem;
     position: relative;
@@ -47,6 +46,7 @@
     width: 100px;
     padding: 0 10px;
     font-size: .5rem;
+    color: #404040;
     background-color: aliceblue;
     box-shadow: 5px 5px #0606067b;
 }

@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="assets/css/secProjects.css"/>
     <link rel="stylesheet" href="assets/css/contact.css"/>
     <link rel="stylesheet" href="assets/css/navMenu.css"/>
+    <link rel="stylesheet" href="assets/css/mediasQueries.css"/>
 </head>
+<script src="changeTheme.js"></script>
 <body>
     <div id="menu-wrapper">
         <input type="checkbox" id="checkbox-btn-nav-menu">
@@ -28,36 +30,38 @@
                 <img src="assets/images/projects/portfolio.png" alt="my Avatar" width="50px">
             </div>
             <ul class="nav-list">
-                <li><a href="#about-me" class="nav-link">Sobre mim</a></li>
+                <li><a href="#banner" class="nav-link">Sobre mim</a></li>
                 <li><a href="#my-skills" class="nav-link">Skills</a></li>
                 <li><a href="#my-projects" class="nav-link">Meus Projetos</a></li>
                 <li><a href="#contact-me" class="nav-link">Contato</a></li>
             </ul>
             <!-- btn switch -->
             <label class="btn-switch">
-                <input type="checkbox" id="chk-switch">
-                <span class="slider"></span>
+                <input type="checkbox" id="chk-switchTheme">
+                <span class="slider"><i class="bi bi-brightness-high-fill"></i></span>
             </label>
         </nav>
     </div>
     <section id="banner" class="base-section">
-        <div class="visualDiv">
+        <div class="visualBanner">
             <div class="svg-container"></div>
+            <div class="svg-sticky-luminaria"></div>
         </div>
-        <div class="visualDiv2">
+        <div class="bodyBanner">
             <div class="presentation-wrapper"> 
-                <p class="name-presentation">👋 Hi, I'm Elizabeth!</p>
+                <!--p class="name-presentation">👋 Hi, I'm Elizabeth!</p-->
+                <p class="wellcome-presentation">Seja Bem-vindo!</p>
+                <p class="intro-presentation">
+                    Meu nome é Elizabeth. E eu sou uma
+                    <span class="-outline-text">desenvolvedora Front-End</span>...
+                </p>
                 <p class="text-presentation">
-                    <span>Seja Bem-vindo!</span>
-                    Este é o portifolio de uma
-                    <span class="-outline-text">desenvolvedora web</span>...
-                    Isso deve ter o efeito de digitação.
-                    Acho que este tb vai ter o efeito...
+                    Futura desenvolvedora Full Stack, apaixonada por transformar ideias em interfaces funcionais e envolventes. Com foco no Frontend, utilizo HTML, CSS, JavaScript e React para criar experiências visualmente atrativas e usuais. Sempre em busca de aprender e evoluir, estou pronta para encarar novos desafios!
                 </p>
             </div>
             <div class="btns-banner">
-                <button class="btn">Contact-me</button>
-                <button class="btn">Download CV</button>
+                <a href="#contact-me" class="btn">Contact-me</a>
+                <a href="assets/files/CV-Elizabeth-v1.pdf" download class="btn">Download CV</a>
             </div>  
         </div>  
     </section>
@@ -65,8 +69,8 @@
         <h2 class="section-title">Minhas Habilidades</h2>
         <div class="skills-wrapper">             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-html">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -76,8 +80,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-css">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -87,8 +91,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-js">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -98,8 +102,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-sass">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -109,8 +113,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-react">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -120,8 +124,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-bootstrap">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -153,7 +157,7 @@
                             <span class="tag-tec -color-css">CSS</span>
                             <span class="tag-tec -color-js">JS</span>
                             </div>
-                            <a class="btn-open-project" target="_blank">
+                            <a class="btn-open-project" href="https://github.com/ChessieNeko/Player_MelanciaPOP" target="_blank">
                                 <i class="bi bi-box-arrow-up-right"></i>
                             </a>   
                         </div>                     
@@ -260,33 +264,44 @@
     </section>
     <section id="contact-me" class="base-section">
         <h2 class="section-title">Contato</h2>
-
+        
         <div class="screen-card-form">
             <div class="screen-card-top-form">
-                <h2 class="contact-subtitle">Me envie uma mensagem!</h2>
+                <div class="screen-card-top-tab">
+                    <h2 class="contact-subtitle">Me envie uma mensagem!</h2>
+                </div>
                 <div class="top-icons">
-                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
             </div>
-            <form id="contact-form">
-                <label for="formName">Nome:
-                    <input id="formName" type="text" name="formName" placeholder="Digite seu nome" required>
-                </label>
-            
-                <label for="formEmail">Email:
-                    <input id="formEmail" type="email" name="formEmail" placeholder="Digite seu email" required>
-                </label>
-            
-                <label for="formMessage">Sua mensagem:
-                    <textarea id="formMessage" name="formMessage" placeholder="Escreva a sua mensagem" required></textarea>
-                </label>
-            
-                <button class="btn" type="submit">Enviar</button>
-            </form>                      
+
+            <div class="screen-card-body">
+                <div class="screen-card-content">
+                    <form id="contact-form">
+                        <label for="formName">Nome:
+                            <input id="formName" type="text" name="formName" placeholder="Digite seu nome" required>
+                        </label>
+                    
+                        <label for="formEmail">Email:
+                            <input id="formEmail" type="email" name="formEmail" placeholder="Digite seu email" required>
+                        </label>
+                    
+                        <label for="formMessage">Sua mensagem:
+                            <textarea id="formMessage" name="formMessage" placeholder="Escreva a sua mensagem" required></textarea>
+                        </label>
+                    
+                        <button class="btn" type="submit">Enviar</button>
+                    </form> 
+                </div>
+                <div class="screen-card-scroll">
+                    <i class="bi bi-caret-up-fill"></i>
+                    <div class="screen-card-scrollBar"></div>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+            </div>                     
         </div>
-        
         <!--a href="https://wa.me/5555991893175"><i class="icon-whatsapp bi bi-whatsapp"></i></a-->
     </section>    
     <!--section id="about-me" class="base-section">
@@ -325,5 +340,4 @@
 </body>
 <script src="main.js"></script>
 <script src="texto.js"></script>
-<script src="changeTheme2.js"></script>
 </html>

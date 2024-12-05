@@ -1,22 +1,62 @@
-:root{
-    --color-sherbet: #fef8b4;
-    --color-dark: #404040;
-    --color-dark-opacity: #4040404d;
-    --color-lilac: hsl(264, 51%, 71%);
-    --color-mint: hsl(164, 61%, 65%);
-    --color-mint-faded: hsla(164, 61%, 65%, 0.793);
-    --color-mint-down: hsl(163, 36%, 51%);
-    --color-sea: hsl(189, 58%, 65%);
-    --color-rose: hsl(344, 56%, 69%);   
-    --color-light: hsl(0, 0%, 97%); 
+body.darkTheme #my-skills .section-title{
+    color: var(--color-title-skills);
+    border-color: var(--color-title-skills);
+}
+body.darkTheme #my-projects .section-title{
+    color: var(--color-title-projects);
+    border-color: var(--color-title-projects);
+}
+body.darkTheme #contact-me .section-title{
+    color: var(--color-title-contact);
+    border-color: var(--color-title-contact);
+}
 
+:root{
+    --color-title-skills: #56cce1;
+    --color-title-projects: #e981c3;
+    --color-title-contact: #6ceb71;
+
+    --color-background: transparent;
+    
+    --color-mint: rgb(142, 210, 200);
+    --color-grass:#6ceb71;
+    
     --color-html: orange;
     --color-react: rgb(27, 203, 252);
     --color-js: rgb(227, 208, 1);
     --color-css: rgb(0, 128, 255);
     --color-bootstrap: rgb(110, 59, 237);
-    --color-sass: rgb(223, 115, 239);
+    --color-sass: rgb(209, 147, 218);
     --color-dark-down: hsl(237, 18%, 23%);
+
+    --color-dark-opacity: #4040404d;
+    --color-mint-faded: hsla(164, 61%, 65%, 0.793);
+    --color-mint-down: hsl(163, 36%, 51%);
+    --color-sea: #56cce1;
+    --color-rose: #e981c3;
+}
+
+.lightTheme{
+    --color-main: rgb(185, 55, 120);
+    /*--color-secondary: rgb(252, 243, 233);*/
+    --color-secondary: #fef8b4;
+    --color-dark: #404040;
+    --color-lilac: rgb(174, 143, 219);   
+    --color-light: rgb(247, 247, 247);
+    --color-navBar: rgba(255, 255, 255, 0.445); 
+    --color-themeSlider: gold;
+}
+.darkTheme{
+    --color-main: rgb(78, 254, 184); 
+    --color-secondary:  #272727;
+    --color-dark: rgb(255, 245, 232);
+    --color-lilac: rgb(174, 143, 219);   
+    --color-light: #4e4e4e;
+    --color-sea: #1e282c;    
+    --color-rose: #302229;
+    --color-grass:#1d271d;
+    --color-navBar: rgba(0, 0, 0, 0.445);
+    --color-themeSlider: rgb(255, 255, 255);
 }
 
 .day {

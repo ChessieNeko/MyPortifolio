@@ -1,36 +1,46 @@
 #banner{    
-    min-height: 100vh;
+    height: 100vh;
+    background-color: var(--color-secondary);
 }
-.visualDiv{
+.visualBanner{
     display: none;
+}
+.bodyBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 100%;
 }
 .presentation-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-        
-    font-family: "Londrina Solid", sans-serif;
-    font-size: 2rem;
-    line-height: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.presentation-wrapper p{
+    justify-content: space-around;
+    
     text-align: justify;
+    
+    height: 60%;
 }
-.name-presentation{
+.wellcome-presentation{
     font-family: "Square Peg", cursive;
-    font-size: 1.7rem;
     font-weight: bolder;
-
-    transform: rotate(353deg);
-    margin-bottom: 1rem; /*para evitar sobreposição*/
+    font-size: 3rem;
+    color: var(--color-main);
+}
+.intro-presentation{
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 2.5rem;
+    line-height: 60px;
+}
+.text-presentation{
+    font-size: 1.2rem;
+    line-height: 30px;
 }
 .-outline-text{
     font-family: "Londrina Sketch", sans-serif;
     font-weight: bolder;
 }
+
 
 /*BTN PADRÃO*/
 .btns-banner{
@@ -59,37 +69,16 @@
     #banner{
         justify-content: space-evenly;
     
-        height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
+        /*height: calc(100vh - 70px); Subtraindo a altura da nav*/
     }    
     .presentation-wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 10px;
+        /*gap: 10px;
             
-        font-family: "Londrina Solid", sans-serif;
         font-size:3rem;
-        line-height: 70px;
-        margin: 40px auto;
+        margin: 40px auto;*/
     }
-    .presentation-wrapper p{
-        text-align: justify;
-    }
-    .name-presentation{
-        font-family: "Square Peg", cursive;
-        font-size: 2rem;
-        font-weight: bolder;
     
-        transform: rotate(353deg);
-        margin-bottom: 2rem; /*para evitar sobreposição*/
-    }
-    .-outline-text{
-        font-family: "Londrina Sketch", sans-serif;
-        font-weight: bolder;
-    }
-    /*********Bots Padrão**********/
-    
-    
+    /*********Bots Padrão**********/    
     .btn{
         background-color: var(--color-lilac);
         color: var(--color-light);

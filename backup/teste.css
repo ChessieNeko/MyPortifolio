@@ -114,7 +114,7 @@ nav{
 </label>
 */
 /*Toggle Switch*/
-#chk-switch{
+#chk-switchTheme{
     display: none;
 }
 
@@ -178,7 +178,7 @@ nav{
     height: calc(100vh - 70px); /*Subtraindo a altura da nav*/
 
 }
-#my-skills{
+#about-me{
     display: flex;
     flex-direction: column;
 

@@ -4,6 +4,16 @@
 
     overflow: hidden;
 }
+
+.aboutMe{
+    background-color: brown;
+
+    width: 35%;
+    height: 100%;
+}
+.skills{
+    padding: 0 20px;
+}
 .skills-wrapper{
     display: flex;
     justify-content: center;
@@ -76,8 +86,6 @@
 @media only screen and (min-width: 600px){
     /*******************************************/
     #my-skills{
-        background-color: var(--color-sea);
-
         height: 100vh;
         overflow: hidden;
     }
@@ -90,15 +98,56 @@
         font-family: "Londrina Solid", sans-serif;
         font-size: 2rem;
     }
-
-    .card-skill{
+    body.darkTheme .card-skill{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         
         background-color: var(--color-light);
-        border: 3PX solid black;
+        border: none;
+        border-radius: 0;
+        
+        cursor: grab;
+    }
+    body.darkTheme .card-top{
+        display: flex;
+        justify-content: end;
+        gap: 7px;
+
+        font-size: 15px;
+        border-bottom: 3px solid transparent;
+
+        width: 100%;
+        padding: 10px;
+    }
+    body.darkTheme .card-top.-color-html{
+        background-color: var(--color-html);
+    }
+    body.darkTheme .card-top.-color-react{
+        background-color: var(--color-react);
+    }
+    body.darkTheme .card-top.-color-js{
+        background-color: var(--color-js);
+    }
+    body.darkTheme .card-top.-color-css{
+        background-color: var(--color-css);
+    }
+    body.darkTheme .card-top.-color-bootstrap{
+        background-color: var(--color-bootstrap);
+    }
+    body.darkTheme .card-top.-color-sass{
+        background-color: var(--color-sass);
+    }
+    
+    body.lightTheme .card-skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        background-color: var(--color-light);
+        border: 3PX solid rgb(0, 0, 0);
         border-radius: 10px;
         
         cursor: grab;

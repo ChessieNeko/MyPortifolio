@@ -70,7 +70,7 @@
 }
 
 /*Toggle Switch*/
-#chk-switch{
+#chk-switchTheme{
     display: none;
 }
 
@@ -79,7 +79,8 @@
     align-items: center;
     position: relative;
     
-    background-color: aliceblue;
+    border: 1px solid var(--color-main);
+    background-color: rgba(240, 248, 255, 0.675);
     width: 60px;
     height: 35px;
     
@@ -90,158 +91,26 @@
 }
 .slider{/*bolinha*/
     position: absolute;
-    background-color: gold;
+    background-color: var(--color-main);
+    color: var(--color-themeSlider);
+    text-align: center;
+    line-height: 25px;
     border-radius: 50%;
+    transform: rotate(90deg);
     width: 25px;
     height: 25px;
     transition: transform .3s ease-in-out;
 }
 
 /*quando checkbox marcada, o irmão muda de cor*/
-#chk-switch:checked + .slider{
+#chk-switchTheme:checked + .slider{
     background-color: var(--color-mint);
 }
 
-#chk-switch:checked + .slider{
+#chk-switchTheme:checked + .slider{
     transform: translateX(1.3rem);
 }
 
 .imgBanner{
     display: none;
-}
-
-@media only screen and (min-width: 600px){
-    body{
-        background-color: rgb(191, 255, 193);
-    }
-    .menu-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgb(203, 163, 240);   
-    }
-    
-    .nav-list{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px;
-        width: 100%;
-    
-        font-size: 1.25rem;
-    }
-    
-    /*Toggle Switch*/
-    #chk-switch{
-        display: none;
-    }
-    
-    .btn-switch{
-        display: flex;
-        align-items: center;
-        position: relative;
-        
-        background-color: aliceblue;
-        width: 60px;
-        height: 35px;
-        
-        border-radius: 40px;
-        padding: 5px;
-        
-        cursor: pointer;
-    }
-    .slider{/*bolinha*/
-        position: absolute;
-        background-color: gold;
-        border-radius: 50%;
-        width: 25px;
-        height: 25px;
-        transition: transform .3s ease-in-out;
-    }
-    
-    /*quando checkbox marcada, o irmão muda de cor*/
-    #chk-switch:checked + .slider{
-        background-color: var(--color-mint);
-    }
-    
-    #chk-switch:checked + .slider{
-        transform: translateX(1.3rem);
-    }
-}
-
-@media only screen and (min-width: 1000px){
-    #menu-wrapper .menu-nav{
-        right: 0;
-    
-        width: 100%;
-        height: auto;
-        
-        flex-direction: row;
-        padding: 0 2rem;
-
-        background-image: none;
-    }
-    .nav-list{
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        gap: 3rem;
-
-        width: 100%;
-        margin-bottom: 0;
-    }
-    .nav-list a{
-        line-height: 1;
-        padding-bottom: 0;
-        border-bottom: 3px dashed var(--color-dark);
-    }
-    .nav-list li:hover a:hover{
-        color: var(--color-lilac);
-        border-color: var(--color-lilac);
-    }
-    .btn-nav-menu{
-        display: none;
-    }
-    .btn-switch{
-
-    }
-    
-    body{
-        background-color: rgb(172, 244, 255);
-    }
-    #banner{
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        position: relative;
-    }
-    #svgBannerImage{
-        width: 80%; /* A imagem vai ocupar 100% da largura disponível */
-        height: auto; /* A altura vai ajustar proporcionalmente */
-        object-fit: contain; /* Faz a imagem se ajustar sem distorção */
-    }
-    .visualDiv{
-        display: block;
-        background-color: crimson;
-        height: 100%;
-        width: 30%;
-    }
-    .visualDiv2{
-        width: 70%;
-        padding: 10rem;
-    }
-
-    /* Estilizando o contêiner do SVG */
-    .svg-container {
-        height: 100%;
-        width: auto;
-
-    }
-    
-    /* Ajustando o SVG dentro do contêiner */
-    .svg-container svg {
-        display: block;
-        
-        height: 100%;
-        width: 140%;
-    }
 }

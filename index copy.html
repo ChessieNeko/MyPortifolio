@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="assets/css/secProjects.css"/>
     <link rel="stylesheet" href="assets/css/contact.css"/>
     <link rel="stylesheet" href="assets/css/navMenu.css"/>
+    <link rel="stylesheet" href="assets/css/mediasQueries.css"/>
 </head>
+<script src="changeTheme.js"></script>
 <body>
     <div id="menu-wrapper">
         <input type="checkbox" id="checkbox-btn-nav-menu">
@@ -35,14 +37,15 @@
             </ul>
             <!-- btn switch -->
             <label class="btn-switch">
-                <input type="checkbox" id="chk-switch">
+                <input type="checkbox" id="chk-switchTheme">
                 <span class="slider"></span>
             </label>
         </nav>
     </div>
     <section id="banner" class="base-section">
         <div class="visualDiv">
-            <object id="svgBannerImage" type="image/svg+xml" data="assets/images/num sei/teste2.svg"></object>
+            <div class="svg-container"></div>
+            <div class="svg-sticky-luminaria"></div>
         </div>
         <div class="visualDiv2">
             <div class="presentation-wrapper"> 
@@ -65,8 +68,8 @@
         <h2 class="section-title">Minhas Habilidades</h2>
         <div class="skills-wrapper">             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-html">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -76,8 +79,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-css">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -87,8 +90,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-js">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -98,8 +101,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-sass">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -109,8 +112,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-react">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -120,8 +123,8 @@
                 </div>
             </figure>             
             <figure class="card-skill">
-                <div class="card-top">
-                    <i class="bi bi-circle-fill"></i>
+                <div class="card-top -color-bootstrap">
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -153,7 +156,7 @@
                             <span class="tag-tec -color-css">CSS</span>
                             <span class="tag-tec -color-js">JS</span>
                             </div>
-                            <a class="btn-open-project" target="_blank">
+                            <a class="btn-open-project" href="https://github.com/ChessieNeko/Player_MelanciaPOP" target="_blank">
                                 <i class="bi bi-box-arrow-up-right"></i>
                             </a>   
                         </div>                     
@@ -265,7 +268,7 @@
             <div class="screen-card-top-form">
                 <h2 class="contact-subtitle">Me envie uma mensagem!</h2>
                 <div class="top-icons">
-                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-dash-circle-fill"></i>
                     <i class="bi bi-circle-fill"></i>
                     <i class="bi bi-x-circle-fill"></i>
                 </div>
@@ -325,5 +328,4 @@
 </body>
 <script src="main.js"></script>
 <script src="texto.js"></script>
-<script src="changeTheme.js"></script>
 </html>
