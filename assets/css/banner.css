@@ -65,38 +65,29 @@
 }
 
 
-@media only screen and (min-width: 600px){
+/*Mobile*/
+@media (max-width: 480px) {
     #banner{
-        justify-content: space-evenly;
-    
-        /*height: calc(100vh - 70px); Subtraindo a altura da nav*/
-    }    
-    .presentation-wrapper{
-        /*gap: 10px;
-            
-        font-size:3rem;
-        margin: 40px auto;*/
-    }
-    
-    /*********Bots Padrão**********/    
-    .btn{
-        background-color: var(--color-lilac);
-        color: var(--color-light);
-        border: 3px solid var(--color-dark);
-    
-        border-radius: 3px;
         padding: 20px;
-        cursor: pointer;
-        font-weight: 600;
-    
-        
-        box-shadow: 5px 5px #0000007a;
-        transition: transform .1s ease-in-out;
     }
-    
-    .btn:hover {
-        transform: translateY(5px) translateX(5px);
-        border: 4px inset var(--color-dark-opacity);
-        box-shadow: none;
+    .bodyBanner{
+        background-color: rgba(0, 255, 255, 0);
+    }
+    .presentation-wrapper{
+        gap: 40px;
+    }
+    .wellcome-presentation{
+        font-size: 2.3rem;
+    }
+    .intro-presentation{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .text-presentation{
+        font-size: .8rem;
+    }
+
+    .btns-banner{
+
     }
 }
