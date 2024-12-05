@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     sliderBtn = document.querySelector(".slider");
-console.log("o btn aqui: ",sliderBtn)
+    //console.log("o btn aqui: ",sliderBtn)
     //Mudança de tema
     const btnSwitchTheme = document.getElementById("chk-switchTheme");
     let lightIs = false;
@@ -9,24 +9,24 @@ console.log("o btn aqui: ",sliderBtn)
         updateLightEffect();
         
         if(btnSwitchTheme.checked){
-            console.log("Escuro");
+            //console.log("Escuro");
         }else{
-            console.log("Claro");
+            //console.log("Claro");
         }
     });
 
     function updateLightEffect(){ 
         
         applyTheme(); 
-        console.log(btnSwitchTheme.checked);
+        //console.log(btnSwitchTheme.checked);
         if(btnSwitchTheme.checked){
-            console.log("Modo Escuro ativado");
+            //console.log("Modo Escuro ativado");
             lightLuminaria.style.opacity = "0.45";
 
             sliderBtn.querySelector('.bi').classList.remove('bi-brightness-high-fill');
             sliderBtn.querySelector('.bi').classList.add('bi-moon-fill');
         }else{
-            console.log("Modo Claro ativado");
+            //console.log("Modo Claro ativado");
             lightLuminaria.style.opacity = "0";
             sliderBtn.querySelector('.bi').classList.remove('bi-moon-fill');
             sliderBtn.querySelector('.bi').classList.add('bi-brightness-high-fill');
@@ -40,11 +40,11 @@ console.log("o btn aqui: ",sliderBtn)
         if (btnSwitchTheme.checked) {
             body.classList.add("darkTheme");
             body.classList.remove("lightTheme");
-            console.log("darkTheme");
+            //console.log("darkTheme");
         } else {
             body.classList.add("lightTheme");
             body.classList.remove("darkTheme");
-            console.log("lightTheme");
+            //console.log("lightTheme");
         }
     }
 
@@ -56,7 +56,7 @@ console.log("o btn aqui: ",sliderBtn)
     //Manipulando o SVG da Luminaria
     const svgContainer = document.querySelector('.svg-container');
     
-    fetch('assets/images/num%20sei/teste2.svg')
+    fetch('assets/images/luminariaBanner.svg')
     .then(response => response.text())
     .then(svgCode => {
         svgContainer.innerHTML = svgCode;
@@ -64,12 +64,12 @@ console.log("o btn aqui: ",sliderBtn)
         // Agora o SVG foi carregado e inserido, podemos manipular seus elementos
         const svgImage = svgContainer.querySelector('svg');
         if (svgImage) {
-            /////console.log("SVG carregado");
+            ///////console.log("SVG carregado");
             const lightLuminaria = svgImage.getElementById("lightLuminaria");
             const luminaria = svgImage.getElementById("luminaria");
 
             if (luminaria && lightLuminaria) {
-                /////console.log("Elementos encontrados");
+                ///////console.log("Elementos encontrados");
                 luminaria.style.cursor = "pointer";
                 
                 luminaria.addEventListener("click", function () {
