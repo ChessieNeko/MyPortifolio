@@ -18,7 +18,6 @@ body.darkTheme #contact-me .section-title{
 
     --color-background: transparent;
     
-    --color-mint: rgb(142, 210, 200);
     --color-grass:#6ceb71;
     
     --color-html: orange;
@@ -30,10 +29,9 @@ body.darkTheme #contact-me .section-title{
     --color-dark-down: hsl(237, 18%, 23%);
 
     --color-dark-opacity: #4040404d;
-    --color-mint-faded: hsla(164, 61%, 65%, 0.793);
-    --color-mint-down: hsl(163, 36%, 51%);
     --color-sea: #56cce1;
     --color-rose: #e981c3;
+    /*--color-mint: rgb(142, 210, 200);*/
 }
 
 .lightTheme{
@@ -45,6 +43,8 @@ body.darkTheme #contact-me .section-title{
     --color-light: rgb(247, 247, 247);
     --color-navBar: rgba(255, 255, 255, 0.445); 
     --color-themeSlider: gold;
+    --color-mint-faded: #dc6fc694;
+    --color-mint: rgb(142, 210, 200);
 }
 .darkTheme{
     --color-main: rgb(78, 254, 184); 
@@ -57,6 +57,8 @@ body.darkTheme #contact-me .section-title{
     --color-grass:#1d271d;
     --color-navBar: rgba(0, 0, 0, 0.445);
     --color-themeSlider: rgb(255, 255, 255);
+    --color-mint-faded:rgba(142, 210, 200, 0.573);
+    --color-mint: rgb(38, 34, 45); 
 }
 
 .day {

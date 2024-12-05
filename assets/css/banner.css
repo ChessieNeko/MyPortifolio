@@ -68,10 +68,10 @@
 /*Mobile*/
 @media (max-width: 480px) {
     #banner{
-        padding: 20px;
+        padding: 0 20px;
     }
     .bodyBanner{
-        background-color: rgba(0, 255, 255, 0);
+        justify-content: space-around;
     }
     .presentation-wrapper{
         gap: 40px;
@@ -86,8 +86,11 @@
     .text-presentation{
         font-size: .8rem;
     }
+    .-outline-text{
+        font-weight: normal;
+    }
 
-    .btns-banner{
-
+    .btn{
+        font-size: .8rem;
     }
 }
