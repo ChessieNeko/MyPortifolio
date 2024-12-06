@@ -1,4 +1,7 @@
-#menu-nav .menu-wrapper{
+#menu-wrapper{
+    position: relative;
+}
+#menu-wrapper .menu-nav{
     position: fixed;
     right: -100vh;
 
@@ -19,8 +22,6 @@
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-
-    border-left: 3px dashed var(--color-main);
 }
 
 .nav-list{
@@ -30,7 +31,7 @@
     padding: 1rem;
     margin-bottom: 2rem;
     width: 100%;
-    font-size: 1.25rem;;
+    font-size: 1.25rem;
 }
 .nav-list a{
     line-height: 3;
@@ -42,7 +43,7 @@
     border-color: var(--color-lilac);
 }
 
-#menu-nav .btn-nav-menu{    
+#menu-wrapper .btn-nav-menu{    
     position: fixed;
     top: 1rem;
     right:  2rem;
@@ -60,24 +61,15 @@
 #checkbox-btn-nav-menu{
     display: none;
 }
-
-.btn-closeNav{
-    display: none;
-    position: absolute;
-    font-size: 1.3rem;
-    box-shadow: none;
-    border: 3px solid var(--color-main);
-}
-
-#checkbox-btn-nav-menu:checked ~ .menu-wrapper .btn-closeNav{
-    display: block;
-    left: -22px;
-}
-#checkbox-btn-nav-menu:checked ~ .menu-wrapper{
-    right: 0;
-}
+/*se o checkbox tiver marcado....*/
 #checkbox-btn-nav-menu:checked ~ .btn-nav-menu{
-    /* */
+    background-color: var(--color-lilac);
+    right:  41.5vw;
+    z-index: 1001;
+}
+
+#checkbox-btn-nav-menu:checked ~ .menu-nav{
+    right: 0;
 }
 
 /*Toggle Switch*/
@@ -131,17 +123,26 @@
     .nav-list{
         font-size: 1.1rem;
     }
-    #menu-nav .btn-nav-menu{
+    #menu-wrapper .btn-nav-menu{    
+        position: fixed;
+        font-size: 1.6rem;
+        top: 1rem;
         right:  1rem;
+        padding: 5px;
+        z-index: 100;
+        color: var(--color-dark);
+        background-color: transparent;
+        cursor: pointer;
+        transition: right 0.2s linear;
     }
-    /*se o checkbox tiver marcado....
+    /*se o checkbox tiver marcado....*/
     #checkbox-btn-nav-menu:checked ~ .btn-nav-menu{
-        right:  25vw;
-    }*/
+        right:  40vw;
+    }
 }
 /*Fullscreen*/
 @media only screen and (min-width: 1000px){
-    #menu-nav .menu-wrapper{
+    #menu-wrapper .menu-nav{
         position: fixed;
         right: 0;
         background-color: var(--color-navBar);

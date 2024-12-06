@@ -46,6 +46,21 @@ body{
     top: 10px;
 }
 
+.btn{
+    background-color: var(--color-lilac);
+    color: rgb(247, 247, 247);
+    border: 2px solid var(--color-dark);
+
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+
+    
+    box-shadow: 5px 5px #0000007a;
+    transition: transform .1s ease-in-out;
+}
+
 
 
 footer{

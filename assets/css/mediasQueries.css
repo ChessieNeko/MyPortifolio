@@ -1,74 +1,4 @@
-
-
-@media only screen and (min-width: 600px){
-    .menu-nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--color-background);   
-    }
-    
-    .nav-list{
-        display: flex;
-        justify-content: space-evenly;
-        padding: 20px;
-        width: 100%;
-    
-        font-size: 1.25rem;
-    }
-    
-    /*Toggle Switch*/
-    #chk-switch{
-        display: none;
-    }
-    
-    /*quando checkbox marcada, o irmão muda de cor*/
-    #chk-switch:checked + .slider{
-        background-color: var(--color-mint);
-    }
-    
-    #chk-switch:checked + .slider{
-        transform: translateX(1.3rem);
-    }
-}
-
 @media only screen and (min-width: 1000px){
-    #menu-wrapper .menu-nav{
-        position: fixed;
-        right: 0;
-        background-color: var(--color-navBar);
-        width: 100%;
-        height: auto;
-        
-        flex-direction: row;
-        padding: 0 2rem;
-
-        background-image: none;
-    }
-    .nav-list{
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        gap: 3rem;
-
-        width: 100%;
-        margin-bottom: 0;
-    }
-    .nav-list a{
-        line-height: 1;
-        padding-bottom: 0;
-        border-bottom: 3px dashed var(--color-dark);
-    }
-    .nav-list li:hover a:hover{
-        color: var(--color-lilac);
-        border-color: var(--color-lilac);
-    }
-    .btn-nav-menu{
-        display: none;
-    }
-    .btn-switch{
-
-    }
 
     #banner{
         display: flex;
@@ -108,12 +38,5 @@
         
         height: 100%;
         width: 140%;
-    }
-}
-
-@media (max-width: 480px) { 
-    #banner{    
-        height: 100vh;
-        background-color: var(--color-secondary);
     }
 }

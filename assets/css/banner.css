@@ -49,21 +49,6 @@
     justify-content: space-evenly;
 }
 
-.btn{
-    background-color: var(--color-lilac);
-    color: var(--color-light);
-    border: 2px solid var(--color-dark);
-
-    border-radius: 2px;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: 600;
-
-    
-    box-shadow: 5px 5px #0000007a;
-    transition: transform .1s ease-in-out;
-}
-
 
 /*Mobile*/
 @media (max-width: 480px) {

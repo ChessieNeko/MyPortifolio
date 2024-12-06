@@ -120,18 +120,13 @@ function resetCardPositions() {
     });
 }
 
-
-
-////////////////Botão de fechar menu lateral
-const checkbox = document.querySelector("#checkbox-btn-nav-menu");
-const icon = document.querySelector(".btn-nav-menu i");
-
-checkbox.addEventListener("change", function() {
-    if (this.checked) {
-        icon.classList.remove("bi-list"); // Remove o ícone de menu
-        icon.classList.add("bi-x");       // Adiciona o ícone de fechar
-    } else {
-        icon.classList.remove("bi-x");
-        icon.classList.add("bi-list");
+//Menu lateral fechar quando clica fora dele
+document.addEventListener('click', function(event){
+    const menuLateral = document.querySelector(".menu-wrapper");
+    const btnChkMenu = document.getElementById("checkbox-btn-nav-menu");
+    
+    // Clique foi fora do menu e do botão de abertura
+    if (!menuLateral.contains(event.target) && !btnChkMenu.contains(event.target)) {
+        btnChkMenu.checked = false;
     }
 });
