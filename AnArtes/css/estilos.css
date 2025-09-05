@@ -40,7 +40,6 @@ button{
     gap: 30px;
     margin: 0 50px;/*<<<PROBLEMA AQUI (ALINHAMENTO CENTRO ARRUMAR)*/ 
     
-    background-color: rgb(36, 3, 67);
 }
 
 .card-product{
