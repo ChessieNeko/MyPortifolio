@@ -62,11 +62,24 @@
     transition: font-size .2s ease;
 }
 
+/*Fade da img banner*/
 #carrossel img {
-    -webkit-mask-image: linear-gradient(to left, transparent, black 30%);
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,    /*no lado esquerdo */
+        black 10%,         /* imagem visível de 10% até 80 */
+        black 80%,         
+        transparent 100%   /*no lado direito */
+    );
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
-    mask-image: linear-gradient(to left, transparent, black 30%);
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 80%,
+        transparent 100%
+    );
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
 }
