@@ -1,0 +1,10 @@
+footer{
+    background-color: rgb(41, 54, 30);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+}
+footer h3{
+    text-transform: uppercase;
+}

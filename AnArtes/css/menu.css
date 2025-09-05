@@ -1,0 +1,101 @@
+.menu-nav{
+    color: white;
+    display: flex;
+    flex-direction: column;
+} 
+
+.menu-top, .menu-sub, .menu-sub-fixo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgb(45, 27, 10)
+}
+
+.menu-top{
+    padding: 20px 50px;
+}
+
+.menu-togp li{
+    background-color: rgba(127, 255, 212, 0.156);
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.img-logo {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+}
+.titulo-Site{
+    font-size: 40px;
+    margin: 0;
+}
+
+.menu-sub{
+    justify-content: space-evenly;
+    transition: all 0.3s ease; /* Adiciona uma transição suave para todas as propriedades */
+}
+.menu-sub-fixo {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/*Editar os espaçamentos*/
+.menu-sub li{
+    padding: 20px;
+}
+
+.menu-sub li a{
+    padding: 10px;
+}
+
+.menu-sub li a:hover, .op-ativa{
+    border-bottom: 2px solid white;
+}
+
+
+/*Barra de Pesquisa*/
+.menu-top .searchBar-menu{
+    flex: 0 0 40%; /*não cresce nem encolhe, ocupa 40% fixo*/
+}
+
+.search-form{
+    display: flex;
+    gap: 10px;
+}
+.search-form .search-input{
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 20px;
+    background-color: #f1f1f17b;
+    border: none;
+}
+.search-form .search-input:focus{
+    background-color: #F1F1F1;
+    transition: background-color .2s ease;
+}
+
+
+.search-form .search-button{
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    
+    background-color: transparent;
+}
+
+.search-form .search-button i:hover{
+    color: #F1F1F1;
+    transition: color .2s ease;
+}

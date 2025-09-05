@@ -1,0 +1,72 @@
+/*BANNER*/
+#banner{
+    position: relative;
+    max-height: 520px; 
+    margin: 2em 0;
+}
+#carrossel {
+    height: 520px;
+    overflow: hidden;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+.item-carrossel{
+    display: flex;
+    justify-content: center;
+}
+
+#carrossel img {
+    position: relative;
+    overflow: hidden; 
+    display: block;
+}
+
+.descricao-banner{
+    width: 34%;
+    padding: 30px 80px 50px 30px;
+
+    font-size: 20px;
+    line-height: 1.75;
+    text-indent: 10%;
+    text-align: justify;
+}
+/*btn carrossel*/
+.banner-btn{    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    border: none;
+    background-color: transparent;
+    font-size: 3em;
+
+}
+.banner-btn.-next{
+    right: 1px;
+}
+.banner-btn.-prev{
+    left: 1px;
+}
+.banner-btn i{
+    opacity: .1;
+}
+.banner-btn i:hover{
+    font-size: 1.07em;
+    opacity: 1;
+    transition: font-size .2s ease;
+}
+
+#carrossel img {
+    -webkit-mask-image: linear-gradient(to left, transparent, black 30%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to left, transparent, black 30%);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+}

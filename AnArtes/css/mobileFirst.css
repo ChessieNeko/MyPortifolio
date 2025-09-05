@@ -1,0 +1,234 @@
+.limpar{
+    clear: both;
+}
+
+body{
+    background-color: rgb(201, 255, 146);
+}
+
+.menu-nav{
+    background-color: rgba(86, 42, 11, 0.575);
+    color: white;
+    display: flex;
+    flex-direction: column;
+} 
+
+.menu-top, .menu-sub, .mwenu-sub-fixo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: crimson;
+}
+
+.menu-top li:not(.logo-container) {
+    padding: 10px;
+}
+
+.logo-container{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+}
+.titulo-Site{
+    font-size: 40px;
+    margin: 0;
+}
+
+.titulo-sec{
+    display: inline-block;
+
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 40px;
+
+    padding: 20px;
+}
+
+.menu-sub{
+    justify-content: space-evenly;
+    transition: all 0.3s ease; /* Adiciona uma transição suave para todas as propriedades */
+}
+.menu-sub-fixo {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/*Editar os espaçamentos*/
+.menu-sub li{
+    padding: 5px 10px 15px 10px;
+}
+
+.menu-sub li a{
+    padding: 0 8px 6px 8px;
+}
+
+.menu-sub li a:hover, .op-ativa{
+    box-sizing: border-box;
+    border-bottom: 2px solid white;
+}
+
+/*BANNER*/
+.carrossel {
+    width: 85%;
+    height: 520px;
+    overflow: hidden;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.item-carrossel{
+    display: flex;
+    justify-content: center;
+}
+
+.carrossel button{
+    border: 3px solid;
+}
+
+.carrossel img {
+    width: 65%;
+    height: 520px;
+    object-fit: contain;
+    
+    border: 3px solid rgb(255, 128, 0);
+    background-color: rgb(132, 132, 255);
+}
+
+.descricao-banner{
+    box-sizing: border-box;
+    width: 34%;
+    border: 3px solid red;
+    padding: 30px 80px 50px 30px;
+
+    font-size: 20px;
+    line-height: 1.75;
+    text-indent: 10%;
+    text-align: justify;
+}
+
+.carrossel button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/*btn carrossel*/
+.carrossel .anterior {
+    left: 10px;
+}
+.carrossel .proximo {
+    right: 10px;
+}  
+
+/*GALERIA PRODUTOS*/
+.container-lista--produtos{
+    /*display: flex;
+    justify-content: center*/
+}
+
+.galeria-produtos{    
+    background-color: rgb(251, 157, 213);
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-produtos{
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    gap: 30px;
+    margin: 0 50px;/*<<<PROBLEMA AQUI (ALINHAMENTO CENTRO ARRUMAR)*/
+
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));  
+}
+
+/*.lista-produtos{
+    background-color: aquamarine;
+    display: grid;
+    gap: 70px;
+
+
+    grid-template-columns: repeat(4, minmax(280px, 300px));
+    grid-template-rows: minmax(350px, auto);
+
+    padding: 20px 0;
+
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); 
+}*/
+
+.card-produto{
+    /**/min-width: 280px;
+    max-width: 300px;
+
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 3px;
+
+    text-align: center;
+    padding: 15px;
+}
+
+.card-produto:hover {
+    background-color: #f0f0f0;
+}
+
+.card-produto img{
+    text-align: center;
+    width: 180px;    
+}
+
+
+footer{
+    background-color: midnightblue;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+}
+footer h3{
+    text-transform: uppercase;
+}
+
+/*Block:
+div
+p
+h1, h2, h3, h4, h5, h6
+ul
+ol
+li
+form
+table
+tr
+td
+th
+blockquote
+address
+pre
+hr*/
+
+/*Inline:
+span
+a
+em
+strong
+img
+br
+input
+label
+select
+option*/
