@@ -2,10 +2,10 @@
 #banner{
     position: relative;
     max-height: 520px; 
-    margin: 2em 0;
+    margin: 1.2em 0;
 }
 #carrossel {
-    height: 520px;
+    height: 480px;
     overflow: hidden;
     margin: auto;
 
@@ -30,7 +30,6 @@
     width: 34%;
     padding: 30px 80px 50px 30px;
 
-    font-size: 20px;
     line-height: 1.75;
     text-indent: 10%;
     text-align: justify;

@@ -1,41 +1,55 @@
+@font-face {
+    font-family: 'BillSmith';
+    src: url('/fonts/BillSmith.otf');
+}
+@font-face {
+    font-family: 'Brosley';
+    src: url('/fonts/Brosley-Regular.ttf');
+}
+@font-face {
+    font-family: 'Changer';/*melhor pro titulo*/
+    src: url('/fonts/Changer.ttf');
+}
+@font-face {
+    font-family: 'Gallardo';
+    src: url('/fonts/Gallardo.otf');
+}
+@font-face {
+    font-family: 'Qonqueror';
+    src: url('/fonts/qonqueror-regular.otf');
+}
+
 body{
     font-family: sans-serif;
+    background-color: #fef8f1;
 }
 
 .limpar{
     clear: both;
 }
 
-main{
-    background-color: rgb(254, 248, 241);
-}
 button{
     cursor: pointer;
 }
 .title-section{
+    font-family: 'Changer';
     display: inline-block;
     text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    text-transform: uppercase;
-    padding: 30px;
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin-bottom: 30px;
 }
 
 /*GALERIA PRODUTOS*/
-.container-lista--produtos{
-    /*display: flex;
-    justify-content: center*/
-}
-
 .galeria-produtos{
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .lista-produtos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 270px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
     gap: 50px 20px;
-    background-color: #24034355;
 
     justify-content: center;
 }
@@ -45,37 +59,50 @@ button{
 .card-product{/*item da grid*/
     display: flex;
     flex-direction: column;
-    max-width: 270px;
+    max-width: 300px;
 
     border-radius: 3px;
-    background-color: rgba(0, 0, 255, 0.479);
+    padding: 10px;
 }
 .card-product .product-img{
     text-align: center;
     /*width: 100%;    */
-    height: 270px;
-    max-width: 270px;
+    height: 220px;
+    max-width: 220px;
     object-fit: cover; /* ou contain */
 }
 .product-info{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 30px 10px 20px 10px;
+    
+    text-align: justify;
 }
 
 .card-product:hover .product-img{
     box-shadow: 1px 1px 10px 0 black;
 }
 
+.card-product .product-details{
+    margin: 20px 0;
+}
+.card-product .product-details h3{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.product-details p{
+    font-size: .8em;
+    color: #1d1d1d;
+}
 .product-link{
-    margin-top: 20px;
+    display: inline-block;
     padding: 10px;
     border-radius: 20px;
     text-transform: uppercase;
     background-color: rgb(77, 46, 16);
     color: white;
     text-align: center;
+    font-size: 14px;
+    width: 100%;
 }
 .product-link:hover{
     background-color: rgba(77, 47, 16, 0.89);

@@ -1,10 +1,50 @@
 footer{
-    background-color: rgb(41, 54, 30);
+    background-color: #29361e;
+    color: #fef8f1;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.listas-footer{
     display: flex;
-    color: white;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    gap: 10em;
+    padding: 20px;
 }
-footer h3{
+.footer-section h3{
     text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1.7rem;
+    font-weight: bold;
 }
+.footer-section li{
+    margin: .7rem 0;
+    font-size: .75rem;
+}
+.footer-section li:hover{
+    color: #fef8f1;
+}
+.footer-section .list-nav-footer li{
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+.footer-section ul{
+    color:#fef8f1bf;
+}
+
+footer p{
+    text-align: center;
+    padding: .4rem 0;
+    font-size: .6rem;
+    border-top: 1px solid #fef8f1bf;
+}
+
+.list-nav-footer a::before {
+    content: "✤";
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.contact-instagram a:hover i{transform: rotate(15deg); color: #E1306C; }
+.contact-whats a:hover i{ color: #25D366; }
+.contact-email a:hover i{ color: #3565ea; }

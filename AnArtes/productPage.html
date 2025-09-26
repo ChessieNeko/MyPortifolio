@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="Arte, Pneus, Artesanato">
+        <meta name="author" content="Ana Paula">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arte X</title>
+        <link rel="icon" href="imagens/logo/favicon/favicon.ico">
+        <!--JS-->
+
+        <!--CSS-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/categoryPage.css">
+        <link rel="stylesheet" href="css/productPage.css">
+        <!--Icons Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu-nav">
+                <ul class="menu-top">
+                    <li>
+                        <a href="main.html" class="logo-container">
+                            <img src="imagens/logo/cameraLogo.png" alt="Logo da AnArtes" class="img-logo">
+                            <span class="titulo-Site">AnaArtes</span>
+                        </a>
+                    </li>
+                    <li class="searchBar-menu">
+                        <form class="search-form" action="/" method="get">
+                            <label for="search-input" class="visually-hidden">Pesquisar artes</label>
+
+                            <input type="text" id="search-input" class="search-input" placeholder="Faça sua pesquisa aqui!">
+                            <button type="submit" class="search-button" aria-label="Pesquisar">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </li>
+                    <li><a href="/">Faça seu Pedido</a></li>
+                </ul>
+                <ul class="menu-sub limpar">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="">Galeria das Artes</a></li>
+                    <li><a href="">Mobília DROP</a></li>
+                    <li><a href="">Decoração DROP</a></li>
+                    <li><a href="">Sobre Mim</a></li>
+                    <li><a href="contato.html">Entre em Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-section">
+            <div class="product-section">
+                <div class="product-imgs">
+                    <div class="more-imgs">
+                        <img class="thumb-img" src="imagens/artes/produto11.webp" alt="">
+                        <img class="thumb-img" src="imagens/artes/produto16.webp" alt="">
+                    </div>
+                    <img class="main-img" src="imagens/artes/produto8.webp" alt="">
+                </div>
+                <div class="product-wrapper">
+                    <div class="product-info">
+                        <div class="product-details">
+                            <h1>Nome do Produto</h1>
+                            <p>Jacques Douchez, pintor e tapeceiro, chegou ao Brasil em 1947 e fixou-se em São Paulo. A partir de 1951, integrou o Atelier-Abstração de Samson Flexor , onde começou a explorar a pintura abstrata.</p>
+                        </div>
+                        <div class="product-style">
+                            <div class="product-style">
+                                <form>
+                                    <h4>Material:</h4>
+                                    <label>
+                                        <input type="radio" name="material" value="aluminio">
+                                        <span>Pés de Alumínio</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="material" value="aluminio">
+                                        <span>Pés de Madeira</span>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="product-link" href="productPage.html">Orçamento</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="listas-footer">
+                <div class="footer-section">
+                    <h3>Entre em Contato</h3>
+                    <ul class="list-contact">
+                    <li class="contact-instagram">
+                        <a href="https://www.instagram.com/anaartepneus/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                        <span>@anaartepneus</span>
+                        </a>
+                    </li>
+                    <li class="contact-whats">
+                        <a href="https://wa.me/5511998765432" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>(11) 9 8765-4321</span>
+                        </a>
+                    </li>
+                    <li class="contact-email">
+                        <a href="mailto:ana-artes@gmail.com">
+                        <i class="bi bi-envelope"></i>
+                        <span>ana-artes@gmail.com</span>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navegação</h3>
+                    <ul class="list-nav-footer">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Galeria das Artes</a></li>
+                        <li><a href="#">Mobília</a></li>
+                        <li><a href="#">Decoração</a></li>
+                        <li><a href="#">Sobre mim</a></li>
+                        <li><a href="#">Entre em contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Copyright &copy; Ana Artes 2025 | Desenvolvido por ChessieCat</p>
+        </footer>
+        <!--JS-->
+        <script defer src="meu-script.js"></script>
+    </body>
+</html>
+
